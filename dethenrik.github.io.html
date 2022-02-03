@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Website Example</title>
+  <meta charset="utf-8">
+  
+
+</head>
+<body>
+
+<!--her er min navbar som er headeren på min hjemmeside.
+den er sat sammen med en billede fil så der kan være et lille logo, der er også et link til min linkedin.
+de er blevet opdelt med <div>/</div>-->
+
+<div class="p-5 bg-danger text-white text-center">
+  <h1>Welcome to my page fellas</h1>
+</div>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <img src="C:\Users\marber\Pictures\hund.jpg" style="width:40px;" class="rounded-pill"> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/martin-berthelsen-4a1557227/">LinkedIN</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!--dette er min about section som har hoved informationerne omkring mig.
+her har jeg brugt <div for at opdele igen hvor jeg også har brugt img src(image source) for at få mit billede in på hjemmesiden-->
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h5>Photo of me:</h5>
+      <img src="C:\Users\marber\Pictures\hund.jpg" class="rounded" style="width:280px;">
+      <h3>info:</h3>
+      <p>navn: Martin a. Berthelsen.</p>
+      <p>fødseldags dato: 28/04/99</p>
+      <p>Adresse: Nørrekær, Rødovre 2610</p>
+      <p>Tlf. Nummer: 27 14 68 70</p>
+      <p>E-mail: Almand1999@hotmail.com</p>
+    </div>
+
+<!--dette er information omkring min familie og fritid hvor jeg har brugt div class="col-sm-8" til at opdele sectionerne.
+så jeg kan have noget på venstre side af skærmen og noget på højre-->
+
+    <div class="col-sm-8">
+      <h2>Short resume</h2>
+      <p>Mit navn er Martin Almand Berthelsen og jeg er født og opvokset i Rødovre sammen med min mor og min søster,
+       jeg har lige siden jeg var lille været meget interreseret i computere og spillekonsoller.</p>
+      <p>Når jeg ikke har siddet foran en skærm har jeg været ude og spille fodbold som jeg gjorde i 13 år.</p>
+      <p>Lige nu går jeg på skolepraktik i hvidovre hos tec som programmør. </p>
+      <p>Mine opgaver har ikke været de største i verden, jeg har lavet lommeregnere, valutaomregner, terning tæller og denne her hjemmeside.</p>
+      <p>Lommeregner, valutaomregner og terning tæller er lavet i C# hvor denne her hjemmeside er lavet med bootstrap.</p>
+      <p></p>
+      <p></p>
+      <p></p>
+
+<!--dette er information omkring min erfaring.
+her har jeg brugt "mt-5" for at fortælle hvor skriften skal være og jeg bruger h1/h2/h3/h4/h5/h6 til overskrifter eller skrift der skal stå med fed tekst-->
+
+      <h2 class="mt-5">Erfaring</h2>
+      <h5>• Salgs-assistent \ Torvets Kiosk 2018-2020</h5>
+      <p>- Mine opgaver i kiosken var opfyldning af varer, lager sortering, indkøb, håndtering af posthus(udlevering af pakker f.eks.)
+         og sidst men ikke mindst oplæring af nye medarbjdere.</p>
+      <p></p>
+      <h5>• Kasse medarbejder \ Netto 2015-2016</h5>
+      <p>- Mine opgaver som kasse medarbejder var trimning af hylder på vej til lager, ellers var mit ansvar primært kassen</p>
+      <p></p>
+      <h5>• Hvis der er nogen spørgsmål eller du/i vil i kontakt med mig er du/i mere end velkommen til at kontakte mig på min e-mail</h5>
+      <p></p>
+      
+<!--dette er omkring mine tidligere uddannelser-->
+
+      <h2 class="mt-5">Uddannelse</h2>
+      <p></p>
+      <h6>• Folkeskole  - hendriksholmskole </h6>
+      <p></p>
+      <h6>• Grundforløb som godsvogns chauffør 2020 (truck certifikat + førstehjælps bevis + udvidet brand bevis)</h6>
+      <p></p>
+      <h6>• data & kommunikations uddannelse med speciale i programmering 2021-?</h6>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<!--dette er min footer hvor jeg har brugt text-danger og text-center for at teksten er i midten af skærmen og så er koden danger farven rød-->
+
+<div class="mt-5 p-4 bg-dark text-danger text-center">
+  <p>Remember to tell somebody you love them</p>
+</div>
+
+
+</body>
+</html>
