@@ -1,4 +1,4 @@
-﻿# Welcome to my page fellas
+﻿# Welcome to my page
 
 
 [LinkedIN](https://www.linkedin.com/in/martin-berthelsen-4a1557227/)
