@@ -1,9 +1,9 @@
 ﻿# Welcome to my page
 
-
+![hund](https://user-images.githubusercontent.com/98741878/152486012-00f04a15-bf2f-45ec-b854-c61757ad67fb.jpg)
 [LinkedIN](https://www.linkedin.com/in/martin-berthelsen-4a1557227/)
 ##### Photo of me:
-[hund](https://user-images.githubusercontent.com/98741878/152484698-132152dd-207e-4a3c-985a-43d4fb99937d.jpg)
+![hund](https://user-images.githubusercontent.com/98741878/152486012-00f04a15-bf2f-45ec-b854-c61757ad67fb.jpg)
 ### info:
 navn: Martin a. Berthelsen.
 
