@@ -3,7 +3,7 @@
 ![image](https://dethenrik.github.io/images/hund.png)
 [LinkedIN](https://www.linkedin.com/in/martin-berthelsen-4a1557227/)
 ##### Photo of me:
-![image](https://dethenrik.github.io/images/hund.png)
+![image](images/hund.png)
 ### info:
 navn: Martin a. Berthelsen.
 
