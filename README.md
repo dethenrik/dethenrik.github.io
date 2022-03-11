@@ -15,15 +15,20 @@ Tlf. Nummer: 27 14 68 70
 
 E-mail: Almand1999@hotmail.com
 ## Short resume
-Mit navn er Martin Almand Berthelsen og jeg er født og opvokset i Rødovre sammen med min mor og min søster, jeg har lige siden jeg var lille været meget interreseret i computere og spillekonsoller.
+Mit navn er Martin og jeg er 22 år, og jeg bor i Rødovre.
 
-Når jeg ikke har siddet foran en skærm har jeg været ude og spille fodbold som jeg gjorde i 13 år.
+jeg går på TEC-skolepraktik som Datatekniker med speciale i programmering
 
-Lige nu går jeg på skolepraktik i hvidovre hos tec som programmør. 
+Jeg er god til at arbejde selvstændigt da jeg ikke har svært ved at komme frem til et problem og en løsning af mig selv.
+Når jeg sidder for mig selv kan du regne med mine deadlines bliver mødt enten til tiden eller før tid da jeg er realistisk omkring mine deadlines og jeg stræber mig for at udføre arbejdet til tiden.
+Jeg har en god forståelse for hvor lang tid et projekt kommer til at tage ud fra mine egne evner.
 
-Mine opgaver har ikke været de største i verden, jeg har lavet lommeregnere, valutaomregner, terning tæller og denne her hjemmeside.
+jeg besluttede mig for at blive programmør efter at have spillet computer i flere år og modificeret spillene om så de er lidt sjovere at spille.
 
-Lommeregner, valutaomregner og terning tæller er lavet i C# hvor denne her hjemmeside er lavet med bootstrap.
+i min fritid sidder jeg gerne og spiller computer eller er ude og stå på skateboard.
+
+kvalifikationer
+
 
 Erfaring
 ##### • Salgs-assistent \ Torvets Kiosk 2018-2020
