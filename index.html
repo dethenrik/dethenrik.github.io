@@ -90,14 +90,44 @@ html {
 .container-fluid {
       position: sticky;
       top: 0;
-      
       background: rgba(0, 0, 0, 0.295);
     }
-    .navbar-expand-sm {
+.navbar-expand-sm {
       position: sticky;
       top: 0;
-      
     }
+    ul2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li2 {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li2:last-child {
+  border-right: none;
+}
+
+li2 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li2 a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
 
 @media only screen and (min-width: 600px) {
   /* For tablets: */
@@ -136,24 +166,12 @@ html {
 <!--her er min navbar som er headeren på min hjemmeside.
 den er sat sammen med en billede fil så der kan være et lille logo, der er også et link til min linkedin.
 de er blevet opdelt med <div>/</div>-->
-<nav class="navbar-expand-sm">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-      </li>
-     <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<ul2>
+  <li2><a class="active" href="#home">Home</a></li>
+  <li2><a href="#news">News</a></li>
+  <li2><a href="#contact">Contact</a></li>
+  <li2 style="float:right"><a href="#about">About</a></li>
+</ul2>
 
 <div class="row">
   <div class="col-3 col-s-3 menu">
