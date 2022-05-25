@@ -1,134 +1,173 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Martin a. Berthelsen</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+
+
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+
+header {
+ 
+  background-color: rgba(74, 75, 35, 0.5);
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+  font-style:normal;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
 body {
-  background-image: url('https://github.com/dethenrik/dethenrik.github.io/blob/main/images/egor-klyuchnyk-full-x-season-webcropped%20for%20website.jpg?raw=true');
-  height: 100%;
+  background-image: url('https://github.com/dethenrik/dethenrik.github.io/blob/main/images/egor-klyuchnyk-full-x-season-web.jpg?raw=true');
+  height: 8070px;
   width: 99%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.menu ul {
+  
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.text-block {
+  color: #ffffff;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.h2 {
+  text-align: center;
+}
+.h3 {
+  text-align: center;
+}
+
+.aside {
+  background-color: rgb(0, 0, 0, 0.7);
+  padding: 10px 185px 20px 10px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.footer {
+   position: absolute;
+   left: 0;
+   top: 8070px;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+.imgprofil {
+  max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 20%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 20%;}
+  .col-4 {width: 25%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 }
 </style>
 </head>
-<body class="w3-light-grey">
+<body>
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<!--her er min navbar som er headeren på min hjemmeside.
+den er sat sammen med en billede fil så der kan være et lille logo, der er også et link til min linkedin.
+de er blevet opdelt med <div>/</div>-->
+<header>
+  <h2>Welcome</h2>
+</header>
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="https://github.com/dethenrik/dethenrik.github.io/blob/main/images/mig.png?raw=true" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2 class="w3-text-white">Martin A. Berthelsen</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-red"></i>Programmør</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-red"></i>Rødovre, DK</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-red"></i>Almand1999@hotmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-red"></i>+45 27 14 68 70</p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-red"></i>Skills</b></p>
-          <p>C#</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:90%">90%</div>
-          </div>
-          <p>HTML/CSS</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
-            </div>
-          </div>
-          <p>SQL-database(linux)</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:75%">75%</div>
-          </div>
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-red"></i>Languages</b></p>
-          <p>Dansk</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-red" style="height:24px;width:100%"></div>
-          </div>
-          <p>Engelsk</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-red" style="height:24px;width:90%"></div>
-          </div>
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>Arbejds erfaring</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>salgsmedarbejder / Torvets kiosk  </b></h5>
-          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2019 - jun 2020<span class="w3-tag w3-red w3-round"></span></h6>
-          <p>Jeg stod for opfyldning af varer, lager sortering, indkøb, vare
-            modtagelse, pakke modtagelse, pakke udlevering og oplæring
-            af nye medarbejdere.
-            </p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>lagermedarbejder / express vikar</b></h5>
-          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>november 2017 - august 2018</h6>
-          <p>Jeg arbejdede i et vikar firma hvor jeg blev sendt ud til forskellige virksomheder som lagermedarbejder når de havde for mange syge.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>kassemedarbejder / Netto</b></h5>
-          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2015 - Mar 2016</h6>
-          <p>jeg sad for det meste i kassen men jeg tog også imod varer og trimmede butikken. </p><br>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>Uddannelse</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>TEC - skole-oplærings-centret</b></h5>
-          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - 2026</h6>
-          <p>jeg sidder lige nu ude på skole-oplærings-centret hvor jeg bliver undervist i forskellige kodesprog og </p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>TEC - Godsvognschauffør</b></h5>
-          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - 2019</h6>
-          <p>Bestået grundforløb.</p>
-          <hr>
-        </div>
-      </div>
-
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <img class="imgprofil" src="https://github.com/dethenrik/dethenrik.github.io/blob/main/images/mig.png?raw=true">
+      <h3 class="h3">info:</h3>
+      <p>navn: Martin a. Berthelsen.</p>
+      <p>fødseldags dato: 28/04/99</p>
+      <p>Adresse: Nørrekær, Rødovre 2610</p>
+      <p>Tlf. Nummer: 27 14 68 70</p>
+      <p>E-mail: Almand1999@hotmail.com</p>
+    </ul>
   </div>
-  
-  <!-- End Page Container -->
+
+  <div class="col-6 col-s-9">
+    <div class="text-block">
+      <h1 class="h2">Short resume</h1>
+        <p>Mit navn er Martin og jeg er 22 år, og jeg bor i Rødovre.</p>
+        <p>jeg går på TEC-Skoleoplæringscentre som Datatekniker med speciale i programmering.</p>
+        <p>Jeg er god til at arbejde selvstændigt da jeg ikke har svært ved at komme frem til et problem og en løsning af mig selv.
+         Når jeg sidder for mig selv kan du regne med mine deadlines bliver mødt enten til tiden eller før tid da jeg er realistisk omkring mine deadlines og jeg stræber mig for at udføre arbejdet til tiden.
+         Jeg har en god forståelse for hvor lang tid et projekt kommer til at tage ud fra mine egne evner.</p>
+        <p>jeg besluttede mig for at blive programmør efter at have spillet computer i flere år og modificeret spillene om så de er lidt sjovere at spille.</p>
+        <p>i min fritid sidder jeg gerne og spiller computer eller er ude og stå på skateboard.</p>
+        <p>i mit skole forløb har jeg arbejdet med C#, bootstrap 5 og SQL</p>
+      </div>
+  </div>
+
+  <div class="col-4 col-s-12">
+    <div class="aside">
+      <h1>Kvalifikationer</h2>
+      <p> - Gaffeltruck certifikat</p>
+      <p> - Udvidet brand-bevis</p>
+      <p> - Udvidet førstehjælp-bevis</p>
+      <p> - Grundforløb i godsvogns transport</p>
+    </div>
+  </div>
 </div>
 
-<footer class="w3-container w3-red w3-center w3-margin-top">
-  <p>Remember to tell somebody you love them.</p>
-</footer>
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
 
 </body>
 </html>
