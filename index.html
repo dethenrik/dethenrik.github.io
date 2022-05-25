@@ -80,19 +80,27 @@ html {
 [class*="col-"] {
   width: 100%;
 }
-.imgprofil {
+.tony {
   max-width: 100%;
     height: auto;
     width: auto;
     text-align: center;
+    border-radius: 5px 5px 0 0;
 }
+
 .card {
-  background-color: antiquewhite;
-  width: 20%;
-  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
 }
-.imgprofil {
-  text-align: left;
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -139,7 +147,7 @@ de er blevet opdelt med <div>/</div>-->
 
   <div class="card">
     <div class="card">
-      <img src="https://github.com/dethenrik/dethenrik.github.io/blob/main/images/mig.png?raw=true" alt="Avatar" style="width:100%">
+      <img class="tony" src="https://github.com/dethenrik/dethenrik.github.io/blob/main/images/mig.png?raw=true" alt="Avatar" style="width:100%">
       <div class="container">
       <h3 class="h3">info:</h3>
       <p class="bi bi-briefcase">  Data-teknikker m. speciale i programmering</p>
