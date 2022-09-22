@@ -6,38 +6,74 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <style>
   body {
-  background-image: url('https://github.com/dethenrik/dethenrik.github.io/blob/main/images/egor-klyuchnyk.jpg?raw=true');
-  height: auto;
+    background-image: url('https://github.com/dethenrik/dethenrik.github.io/blob/main/images/egor-klyuchnyk.jpg?raw=true');
+  height: 1560px;
   width: 99%;
 }
-.header {
+ul {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  background: rgba(223, 186, 220, 0.764);
+  list-style-type: none;
+  padding: 15;
+  overflow: hidden;
+  background-color:rgba(223, 186, 220, 0.764);
   z-index: 2;
   font-family:cursive;
-  padding-right: 30px;
-  list-style-type: none;
-  text-align: center;
-  display: inline;
-  padding-top: 11px;
-  justify-content: space-between;
+  font-size: 12px;
 }
 li {
-  display: inline;
+  float: left;
 }
-a {
+li a {
+  display: block;
   color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-.active{
-  text-decoration-color: crimson;
+a:link {
+  color: red;
 }
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: blue;
+}
+p{
+  color: cornsilk;
+}
+
+
+
+
+
+h1 {
+            color: green;
+        }
+         
+        h2 {
+            font-family: Impact;
+        }
+         
+        body {
+            text-align: center;
+        }
+
+
+
+
+
+
 .footer {
-   position: fixed;
+   position: absolute;
    left: 0;
-   bottom: 0;
+   bottom: 100%;
    width: 100%;
    background: rgba(223, 186, 220, 0.781);
    color: rgb(0, 0, 0);
@@ -50,14 +86,36 @@ a {
 </head>
 <body>
 
-<div class ="header">
   <ul>
-    <li><a href="./index.html">Home</a></li>
-    <li><a href="./CV.html">News</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
+    <li><a href="./index.html">Forside</a></li>
+    <li><a href="./CV.html">Gamle opgaver</a></li>
   </ul>
-</div>
+
+  <h1>GeeksforGeeks</h1>
+  <h2>DOM console.log( ) Method</h2>
+  <p>
+      To view the message in the console
+      press the F12 key on your keyboard.
+  </p>
+  <p>
+      To view the message, double click
+      the button below:
+  </p>
+  <br>
+  <button ondblclick="log_console()">
+      din mor
+  </button>
+  <script>
+      function log_console() {
+          var MyElement = {
+              Product: "Coca Cola",
+              Type: "Beverage"
+          };
+          console.log(MyElement);
+      }
+  </script>
+
+
   <!--dette er min footer hvor jeg har brugt text-danger og text-center for at teksten er i midten af skærmen og så er koden danger farven rød-->
   <div class="footer">
     <p>Remember to tell somebody you love them</p>
