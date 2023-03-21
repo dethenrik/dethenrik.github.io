@@ -161,30 +161,33 @@ body {
 /* Media Screen*/
 
 /* Phone Screens*/
-@media screen and (max-width: 800px)
+
+/*MENU BUTTON SIZING FOR BIG AND SMALL PHONE SCREENS*/
+@media screen and (max-height: 700px)
 {.button1, .button2, .button3, .button4
  {
    margin-top: 40px;
  }
 }
-@media screen and (max-width: 800px)
-{.infobox
+@media screen and (min-height: 800px)
+{.button2, .button3, .button4
  {
-    line-height: 25px;
-    font-size: 15px !important;
- }   
+  margin-top: 50px;
+ }
 }
-@media screen and (max-width: 800px)
-{.selfie
+@media screen and (min-height: 800px)
+{.button1
  {
-
- }   
+  margin-top: 110px;
+ }
 }
+/**/
 
 
 
 
 
+/*END OF PHONE SCREENS*/
 
 /* bigger PC monitor*/
 
