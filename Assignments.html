@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('https://github.com/dethenrik/dethenrik.github.io/blob/main/images/egor-klyuchnyk.jpg?raw=true');
+  z-index: -2;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #000000d5;
+
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  color: rgba(255, 145, 0, 0.699);
+}
+
+/* Style the content */
+.content {
+    height: 100vh;
+    margin: 0 auto;
+    color: #f2f2f2;
+    text-align: center;
+    background-color: #000000d5;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+.selfie{
+    max-width: 33%;
+
+  border-radius: 50%;
+}
+.infobox{
+    width: 100%;
+
+}
+
+/* Style the footer */
+.footer {
+    text-align: center;
+  padding: 10px;
+
+}
+
+
+
+
+/* Media Screen*/
+
+/* Phone Screens*/
+@media screen and (max-width: 800px)
+{.topnav, .content, .selfie, .infobox, .footer
+ {
+    max-width: 100%;
+ }
+}
+@media screen and (max-width: 800px)
+{.selfie
+ {
+    max-width: 80%;
+ }
+}
+
+
+@media screen and (max-width: 800px)
+{.infobox
+ {
+    line-height: 15px;
+    font-size: 13px !important;
+ }   
+}
+@media screen and (max-width: 800px)
+{.selfie
+ {
+
+ }   
+}
+
+
+
+
+
+
+/* bigger PC monitor*/
+
+@media screen and (min-width: 2000px)
+{.topnav, .content, .selfie, .infobox, .footer
+ {
+    width: 100%;
+    
+ }
+}
+
+
+
+@media screen and (min-width: 2000px)
+{.infobox
+ {
+    font-size: 0.85vmax;
+    
+ }
+}
+
+
+
+
+
+/* normal size + smaller*/
+
+@media screen and (max-width: 1800px)
+{.infobox
+ {
+    font-size: 0.85vmax;
+    
+ }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="./forside.html">Back</a>
+
+</div>
+
+<div class="content" >
+        <img class="selfie" src="https://github.com/dethenrik/dethenrik.github.io/blob/main/images/mig.png?raw=true" alt="Avatar">
+        <hr class="hr2"> 
+<div class="infobox">
+          <h4 class="bi bi-pencil"><b> Info</b></h4> 
+          <p class="bi bi-briefcase">   Datateknikker m. speciale i programmering</p>
+          <p class="bi bi-house-door">   Rødovre, DK</p>
+          <p <li class="bi bi-envelope link"> <a href=" mailto:Almand1999@hotmail.com"> Almand1999@hotmail.com </a> </li> </p>
+          <p class="bi bi-telephone number">   +45 27 14 68 70</p>
+          <p class="outset"></p>
+          <hr class="hr2"> 
+</div>     
+
+
+
+  </div>
+
+
+
+</body>
+</html>
