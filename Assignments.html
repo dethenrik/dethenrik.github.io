@@ -31,17 +31,17 @@ body {
   padding-top: 60px;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
+.sidenav a, .dropdown-btn {
+  padding: 16px 8px 32px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.sidenav a:hover, .dropdown-btn:hover {
+    color: rgba(255, 145, 0, 0.699);
 }
 
 .sidenav .closebtn {
@@ -57,8 +57,8 @@ body {
 
     margin: 5;
     position: fixed;
-    top: 5px;
-  left: 5px;
+    top: 10px;
+  left: 15px;
 }
 #main{
     
@@ -66,6 +66,26 @@ body {
     transition: margin-left .5s;
 }
 
+/*SIDENAV DROP MENU*/
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
+}
+.dropdown-container a{
+  font-size: 15px;
+}
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+
+}
+.dropdown-btn{
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0);
+}
+
+
+/**/
 
 
 
@@ -222,9 +242,16 @@ body {
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="./forside.html">Menu</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+
+        </a>
+        <button class="dropdown-btn">Assignments 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">KørselsLog</a>
+            <a href="#">Film/Music Bibliotek</a>
+            <a href="#">Hangman Game</a>
+          </div>
       </div>
       
       <!-- Use any element to open the sidenav -->
@@ -256,7 +283,7 @@ body {
 
 
 <div class="content" >
-    <span class="span" onclick="openNav()">&#9776; open</span>
+    <span class="span" onclick="openNav()">&#9776;</span>
         <img class="selfie" src="https://github.com/dethenrik/dethenrik.github.io/blob/main/images/mig.png?raw=true" alt="Avatar">
         <hr class="hr2"> 
 <div class="infobox">
@@ -292,6 +319,24 @@ body {
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
+</script>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
 </script>
 
 
