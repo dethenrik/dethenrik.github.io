@@ -4,76 +4,76 @@
 <title>CSS Template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
 <style>
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  
 }
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+
   background-image: url('https://github.com/dethenrik/dethenrik.github.io/blob/main/images/egor-klyuchnyk.jpg?raw=true');
   z-index: -2;
 }
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #000000d5;
-
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  color: rgba(255, 145, 0, 0.699);
-}
-
 /* Style the content */
 .content {
     height: 100vh;
     margin: 0 auto;
     color: #f2f2f2;
-    text-align: center;
     background-color: #000000d5;
-
     padding: 33px;
-    align-content: center;
-
 }
+.myname{
+  font-family: "Sofia", sans-serif;
+  margin-top: 275px;
+  align-content: center;
+  text-align: center;
+  text-shadow: 4px 4px 100px rgb(255, 187, 0);
+}
+
+
+
+
+
+
+
+
+
 .button1 {
-  margin: 0 auto; /*Centers button on screen*/
   background-color: #00000085;
   border: 2px solid rgb(255, 145, 0);
   font-size: 24px;
   cursor: pointer;
   height: 100px;
   width: 250px;
-  display: inline-block;
   margin-top: 200px;
   border-radius: 20px;
+
 }
 .button1:hover{
   background-color: rgb(255, 145, 0); 
   color: rgb(255, 255, 255);
 }
 .button1 a{
+  padding-top: 15%;
+  padding-left: 35%;
+  padding-right: 35%;
+  padding-bottom: 15%;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  padding: 14%;
-  display: block;
 }
+
+
+
+
+
+
+
+
+
+
 .button2 {
-  margin: 0 auto; /*Centers button on screen*/
   background-color: #00000085;
   border: 2px solid rgb(255, 145, 0);
 
@@ -83,8 +83,8 @@ body {
   cursor: pointer;
   height: 100px;
   width: 250px;
-  display: block;
   margin-top: 20px;
+  margin-left: 20px;
   border-radius: 20px;
 
 }
@@ -93,14 +93,21 @@ body {
   color: rgb(255, 255, 255);
 }
 .button2 a{
+  padding-top: 15%;
+  padding-left: 28%;
+  padding-right: 28%;
+  padding-bottom: 15%;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  padding: 14%;
-  display: block;
 }
 
+
+
+
+
+
+
 .button3 {
-  margin: 0 auto; /*Centers button on screen*/
   background-color: #00000085;
   border: 2px solid rgb(255, 145, 0);
 
@@ -110,23 +117,32 @@ body {
   cursor: pointer;
   height: 100px;
   width: 250px;
-  display: block;
   margin-top: 20px;
+  margin-left: 20px;
   border-radius: 20px;
 
 }
 .button3:hover{
   background-color: rgb(255, 145, 0); 
-  color: black; 
+  color: rgb(255, 255, 255);
 }
 .button3 a{
+  padding-top: 15%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 15%;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  padding: 14%;
-  display: block;
 }
+
+
+
+
+
+
+
+
 .button4 {
-  margin: 0 auto; /*Centers button on screen*/
   background-color: #00000085;
   border: 2px solid rgb(255, 145, 0);
 
@@ -136,8 +152,8 @@ body {
   cursor: pointer;
   height: 100px;
   width: 250px;
-  display: block;
   margin-top: 20px;
+  margin-left: 20px;
   border-radius: 20px;
 
 }
@@ -145,18 +161,24 @@ body {
   background-color: rgb(255, 145, 0); 
 }
 .button4 a{
+padding: 15%;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  padding: 14%;
-  display: block;
 }
+.buttongroup{
+  margin: 0 !important;
 
-/* Style the footer */
-.footer {
-    text-align: center;
-  padding: 10px;
+  align-content: center;
+  text-align: center;
 
 }
+
+
+
+
+
+
+
 
 
 
@@ -167,15 +189,22 @@ body {
 
 /*MENU BUTTON SIZING FOR BIG AND SMALL PHONE SCREENS*/
 @media screen and (max-height: 700px)
-{.button1, .button2, .button3, .button4
+{.button1, .button2, .button3, .button4, .buttongroup
  {
    margin-top: 20px;
+   margin-left: 10px;
+   margin-right: 10px;
+
+   text-align: center;
+   align-content: center;
  }
 }
 @media screen and (min-height: 800px)
-{.button2, .button3, .button4
+{.button2, .button3, .button4, .buttongroup
  {
   margin-top: 50px;
+  margin-left: 10px;
+   margin-right: 10px;
  }
 }
 @media screen and (min-height: 800px)
@@ -186,18 +215,19 @@ body {
 }
 
 @media screen and (min-width: 1000px)
-{.button1
+{.buttongroup
  {
-  margin-top: 200px;
+  margin-top: 275px;
  }
 }
 /**/
 
-
-
-
-
 /*END OF PHONE SCREENS*/
+
+
+
+
+
 
 /* bigger PC monitor*/
 
@@ -236,14 +266,15 @@ body {
 
 
 <div class="content">
-
-  
+<h1 class="myname">Martin Almand Berthelsen</h1>
+<div class="buttongroup">
   <button class="button1"><a href="./Info.html">INFO</a></button>
   <button class="button2"><a href="./forside.html">RÊSUME</a></button>
-  <div class="button3"><a href="./index.html">OLD PAGE</a></div>
-  <div class="button4"><a href="./Assignments.html">ASSIGNMENTS</a></div>
+  <button class="button3"><a href="./index.html">OLDPAGE</a></button>
+  <button class="button4"><a href="./Assignments.html">ASSIGNMENTS</a></button>
 
 
+</div>
 </div>
 
 
