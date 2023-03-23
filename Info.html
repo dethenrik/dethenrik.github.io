@@ -95,6 +95,7 @@
 
 }
 .selfie{
+  margin-top: 50px;
     max-width: 33%;
 
   border-radius: 50%;
@@ -117,30 +118,39 @@
 /* Media Screen*/
 
 /* Phone Screens*/
-@media screen and (max-width: 800px)
+@media screen and (max-height: 780px)
 {.topnav, .content, .selfie, .infobox, .footer
  {
     max-width: 100%;
  }
 }
-@media screen and (max-width: 800px)
+@media screen and (max-height: 780px)
 {.selfie
  {
     max-width: 80%;
  }
 }
+@media screen and (max-height: 780px)
+{.infobox
+ {
+  line-height: 15px;
+    font-size: 13px !important;
+ }
+}
 
 
-@media screen and (max-width: 800px)
+@media screen and (min-height: 800px)
 {.infobox
  {
     line-height: 15px;
     font-size: 13px !important;
  }   
 }
-@media screen and (max-width: 800px)
+@media screen and (min-height: 800px)
 {.selfie
  {
+   margin-top: 80px;
+  max-width: 90%;
 
  }   
 }
