@@ -48,6 +48,7 @@ body {
   height: 100px;
   width: 250px;
   margin-top: 200px;
+  margin-right: 10px;
   border-radius: 20px;
 
 }
@@ -57,8 +58,8 @@ body {
 }
 .button1 a{
   padding-top: 15%;
-  padding-left: 35%;
-  padding-right: 35%;
+  padding-left: 38%;
+  padding-right: 38%;
   padding-bottom: 15%;
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -166,7 +167,7 @@ padding: 15%;
   text-decoration: none;
 }
 .buttongroup{
-  margin: 0 !important;
+  margin: 0;
 
   align-content: center;
   text-align: center;
@@ -188,38 +189,29 @@ padding: 15%;
 /* Phone Screen*/
 
 /*MENU BUTTON SIZING FOR BIG AND SMALL PHONE SCREENS*/
-@media screen and (max-height: 700px)
-{.button1, .button2, .button3, .button4, .buttongroup
+@media screen and (max-height: 819px)
+{.button1, .button2, .button3, .button4, .buttongroup, .myname
  {
    margin-top: 20px;
    margin-left: 10px;
    margin-right: 10px;
-
+   font-size: 20px;
    text-align: center;
    align-content: center;
  }
 }
-@media screen and (min-height: 800px)
-{.button2, .button3, .button4, .buttongroup
+@media screen and (min-height: 820px)
+{.button1, .button2, .button3, .button4, .buttongroup, .myname
  {
-  margin-top: 50px;
-  margin-left: 10px;
+  margin-top: 40px;
+   margin-left: 10px;
    margin-right: 10px;
- }
-}
-@media screen and (min-height: 800px)
-{.button1
- {
-  margin-top: 80px;
+   font-size: 25px;
+   text-align: center;
+   align-content: center;
  }
 }
 
-@media screen and (min-width: 1000px)
-{.buttongroup
- {
-  margin-top: 275px;
- }
-}
 /**/
 
 /*END OF PHONE SCREENS*/
@@ -231,22 +223,7 @@ padding: 15%;
 
 /* bigger PC monitor*/
 
-@media screen and (min-width: 2000px)
-{.button1, .button2, .button3, .button4
- {
-    width: 13vw;
-    
- }
-}
 
-
-
-@media screen and (min-width: 2000px)
-{.content, .button1, .button2, .button3, .button4
- {
-    
- }
-}
 
 
 
@@ -254,18 +231,46 @@ padding: 15%;
 
 /* normal size + smaller*/
 
-@media screen and (max-width: 1800px)
-{.content, .button1, .button2, .button3, .button4
+@media screen and (min-width: 940px)
+{.button1, .button2, .button3, .button4
  {
-    
+    width: 13vw;
+    height: 13vh;
  }
 }
+
+
+
+@media screen and (min-width: 940px)
+{.buttongroup
+ {
+  font-size: 2vh;
+   font-size: 2vw;
+    margin-top: 250px;
+ }
+}
+@media screen and (min-width: 940px)
+{.myname
+ {
+   font-size: 2vh;
+   font-size: 2vw;
+
+    margin-top: 250px;
+ }
+}
+
+
+
+
+
+
 </style>
 </head>
 <body>
 
 
 <div class="content">
+
 <h1 class="myname">Martin Almand Berthelsen</h1>
 <div class="buttongroup">
   <button class="button1"><a href="./Info.html">INFO</a></button>
@@ -276,8 +281,6 @@ padding: 15%;
 
 </div>
 </div>
-
-
 
 </body>
 </html>
