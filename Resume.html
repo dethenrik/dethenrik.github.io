@@ -100,7 +100,7 @@
 
 /* Style the content */
 .content {
-    height: 150vh;
+    height: 125vh;
     margin: 0 auto;
     color: #f2f2f2;
     text-align: center;
@@ -117,7 +117,6 @@
   align-content: center;
   text-align: center;
   text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -1px -1px 1px rgba(223, 60, 60, 0.904);
-  width: 45%;
 }
 .Erfaring{
     margin-top: 10px;
@@ -126,7 +125,6 @@
   align-content: center;
   text-align: center;
   text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -1px -1px 1px rgba(223, 60, 60, 0.904);
-  width: 45%;
 }
 .Skole{
     margin-top: 10px;
@@ -135,7 +133,24 @@
   align-content: center;
   text-align: center;
   text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -1px -1px 1px rgba(223, 60, 60, 0.904);
-  width: 45%;
+}
+.Kompetencer{
+    border: 2px solid red;
+  font-family: "Audiowide", sans-serif;
+  align-content: center;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -1px -1px 1px rgba(223, 60, 60, 0.904);
+  width: 37vw;
+  margin-right: 30px;
+}
+
+.columnLeft{
+  float: left;
+  height: 300px; 
+}
+.columnRight{
+  float: right;
+  height: 300px; 
 }
 
 
@@ -154,18 +169,12 @@
  }
 }
 @media screen and (max-height: 819px)
-{.topnav, .selfie, .infobox, .footer
+{.topnav, .infobox, .footer
  {
     max-width: 100%;
  }
 }
-@media screen and (max-height: 819px)
-{.selfie
- {
-   margin-top: 50px;
-    max-width: 80%;
- }
-}
+
 @media screen and (max-height: 819px)
 {.infobox
  {
@@ -182,14 +191,33 @@
     font-size: 13px !important;
  }   
 }
-@media screen and (min-height: 820px)
-{.selfie
- {
-   margin-top: 80px;
-  max-width: 90%;
 
- }   
+
+
+
+
+
+
+
+@media screen and (min-Width:970px)
+{.infobox
+    {
+        line-height: 15px;
+        font-size: 18px !important;
+        width: 55vw;
+
+    }
 }
+@media screen and (min-Width:970px)
+{.Kompetencer
+    {
+        
+        line-height: 35px;
+        height: 114vh;
+
+    }
+}
+
 
 
 
@@ -238,7 +266,8 @@
 <div class="content" >
   <span class="span" onclick="openNav()">&#9776;</span>
 
-
+<div class="row">
+    <div class="columnLeft">
     <div class="infobox">
         <h1> Resume</h>
             <hr>
@@ -281,8 +310,43 @@
         <h4><b> - Folkeskole - hendriksholmskole</b></h4>
         <h6> Aug 2006 - Juni 2015</h6>
       </div>
+    </div>
+<div class="columnRight">
+
+      <div class="Kompetencer">
+        <h1><b> KOMPETENCER </b></h1>
+        <hr>
+        <h4> HTML - ADVANCED BEGINNER</h4>
+        <hr>
+        <h4> CSS - ADVANCED BEGINNER</h4>
+        <hr>
+        <h4> OOP - NOVICE</h4>
+        <hr>
+        <h4> C# - ADVANCED BEGINNER</h4>
+        <hr>
+        <h4> WINFORM - ADVANCED BEGINNER</h4>
+        <hr>
+        <h4> CRUD - ADVANCED BEGINNER</h4>
+        <hr>
+        <h4> TILSLUTNING AF SERVER FRA VSC</h4>
+        <hr>
+        <h4> CISCO CCNA 1</h4>
+        <hr>
+        <h4> OS STYRING - NOVICE</h4>
+        <hr>
+        <h4> UML KLASSEDIAGRAMMER - NOVICE</h4>
+        <hr>
+        <h4> CASE DIAGRAMMER - NOVICE</h4>
+        <hr>
+        <h4> MySQL - NOVICE</h4>
+        <hr>
+        <h4> MSSQL - NOVICE</h4>
+        <hr>
+        <h4> GITHUB - ADVANCED BEGINNER</h4>
+      </div>
 
 
+    </div>
 </div>
 </div>     
 
