@@ -112,6 +112,10 @@
 }
 
 .infobox{
+    font-size: max(0.7vw);
+    max-width: 55vw ;
+    margin-right: 20px;
+
     border: 2px solid red;
   font-family: "Audiowide", sans-serif;
   align-content: center;
@@ -119,6 +123,9 @@
   text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -1px -1px 1px rgba(223, 60, 60, 0.904);
 }
 .Erfaring{
+    font-size: max(0.7vw);
+    max-width: 55vw ;
+    margin-right: 20px;
 
     margin-top: 10px;
     border: 2px solid red;
@@ -128,6 +135,9 @@
   text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -1px -1px 1px rgba(223, 60, 60, 0.904);
 }
 .Skole{
+    font-size: max(0.7vw);
+    max-width: 55vw ;
+    margin-right: 20px;
 
     margin-top: 10px;
     border: 2px solid red;
@@ -137,14 +147,17 @@
   text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -1px -1px 1px rgba(223, 60, 60, 0.904);
 }
 .Kompetencer{
+
+    font-size: max(0.7vw);
+
     border: 2px solid red;
   font-family: "Audiowide", sans-serif;
   align-content: center;
   text-align: center;
-  line-height: 29px;
+  line-height: 3.25vh;
   text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -1px -1px 1px rgba(223, 60, 60, 0.904);
   max-width: 37vw;
-  margin-right: 30px;
+
 }
 
 .columnLeft{
@@ -152,6 +165,10 @@
   float: right;
   height: 300px; 
 }
+.columnright{
+height: 300px; 
+}
+
 .row::after {
   content: "";
   display: table;
@@ -169,35 +186,27 @@
 /* Media Screen*/
 
 /* Phone Screens*/
+
+
 @media screen and (max-height: 819px)
-{.content
+{.Kompetencer
  {
-   padding: 10px !important;
+    max-width: 30vw;
+    font-size: 1.0vw;
+
+
  }
 }
 @media screen and (max-height: 819px)
-{.topnav, .infobox, .footer
+{.infobox, .Erfaring, .Skole
  {
-    max-width: 100%;
- }
-}
-
-@media screen and (max-height: 819px)
-{.infobox
- {
-  line-height: 15px;
-    font-size: 13px !important;
+    max-width: 40vw;
+    font-size: 1.4vw;
+    line-height: 1.28vh;
  }
 }
 
 
-@media screen and (min-height: 820px)
-{.infobox
- {
-    line-height: 15px;
-    font-size: 13px !important;
- }   
-}
 
 
 
@@ -205,14 +214,8 @@
 
 
 
-@media screen and (max-Width:1720px)
-{.infobox, .Erfaring, .Skole, .Kompetencer
-    {
-        width: 45vw;
 
 
-    }
-}
 
 
 
