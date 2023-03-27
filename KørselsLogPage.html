@@ -139,30 +139,41 @@ transition: 0.3s;
 /* Media Screen*/
 
 /* Phone Screens*/
-@media screen and (max-width: 800px)
-{.topnav, .content, .selfie, .infobox, .footer
+@media screen and (max-height: 890px)
+{.content, .infobox, .h2
  {
     max-width: 100%;
+    padding-bottom: 10px;
  }
 }
-
-
-
-@media screen and (max-height: 700px)
+@media screen and (max-height: 890px)
 {.infobox
  {
-     padding-top: 200px;
     line-height: 15px;
-    font-size: 13px !important;
+    font-size: 8px !important;
+    padding: 0%;
+    height: 65vh;
  }   
 }
-@media screen and (max-height: 800px)
+@media screen and (max-height: 890px)
+{.content
+ {
+    padding: 0%;
+ }   
+}
+
+
+
+
+
+
+
+/* SMALL PHONE SCREEN*/
+@media screen and (max-height: 780px)
 {.infobox
  {
-    padding-top: 200px;
+    font-size: 8px !important;
 
-    line-height: 15px;
-    font-size: 13px !important;
  }   
 }
 
@@ -219,9 +230,9 @@ transition: 0.3s;
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-container">
-            <a href="./KørselsLogPage.html">KørselsLog</a>
+            <a href="./KørselsLogPage.html">Hangman Game</a>
             <a href="#">Film/Music Bibliotek</a>
-            <a href="#">Hangman Game</a>
+            <a href="#">KørselsLog</a>
           </div>
         <a href="./Resume.html">Rêsume</a>
         <a href="./Info.html">Information</a>
