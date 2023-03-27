@@ -4,6 +4,8 @@
 <title>CSS Template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&effect=neon|outline|emboss|shadow-multiple">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
 <style>
 * {
   box-sizing: border-box;
@@ -18,25 +20,29 @@ body {
 
 /* Style the top navigation bar */
 .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.877);
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+    font-family: "Audiowide", sans-serif;
+
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.877);
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
 }
 
 .sidenav a, .dropdown-btn {
-  padding: 16px 8px 32px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #ffffff;
-  display: block;
-  transition: 0.3s;
+    text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -2px -2px 3px rgba(223, 60, 60, 0.904);
+
+padding: 16px 8px 32px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #ffffff;
+display: block;
+transition: 0.3s;
 }
 
 .sidenav a:hover, .dropdown-btn:hover {
@@ -71,7 +77,10 @@ body {
   padding-left: 8px;
 }
 .dropdown-container a{
-  font-size: 15px;
+    font-family: "Audiowide", sans-serif;
+  text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -2px -2px 3px rgba(223, 60, 60, 0.904);
+
+    font-size: 15px;
 }
 .fa-caret-down {
   float: right;
@@ -79,6 +88,8 @@ body {
 
 }
 .dropdown-btn{
+  font-family: "Audiowide", sans-serif;
+
     margin-right: 200px !important;
     background-color: rgba(0, 0, 0, 0);
     border: rgba(0, 0, 0, 0);
@@ -137,8 +148,12 @@ body {
 }
 .infobox{
     width: 100%;
-    padding-top: 450px;
-    font-family: 'Times New Roman', Times, serif !important;
+    padding-top: 350px;
+    font-family: "Audiowide", sans-serif !important;
+    text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -2px -2px 3px rgba(223, 60, 60, 0.904);
+    font-size: 40px;
+
+
 
 }
 
@@ -190,20 +205,14 @@ body {
 
 /* bigger PC monitor*/
 
-@media screen and (min-width: 2000px)
-{.topnav, .content, .selfie, .infobox, .footer
- {
-    width: 100%;
-    
- }
-}
 
 
 
-@media screen and (min-width: 2000px)
+
+@media screen and (min-width: 1900px)
 {.infobox
  {
-    font-size: 0.85vmax;
+    font-size: 2.5vmax;
     
  }
 }
@@ -217,7 +226,7 @@ body {
 @media screen and (max-width: 1800px)
 {.infobox
  {
-    font-size: 0.85vmax;
+    font-size: 1vmax;
     
  }
 }
@@ -254,7 +263,7 @@ body {
             <a href="#">Film/Music Bibliotek</a>
             <a href="#">Hangman Game</a>
           </div>
-        <a href="./forside.html">Rêsume</a>
+        <a href="./Resume.html">Rêsume</a>
         <a href="./Info.html">Information</a>
         <a href="./forside.html">Tilbage</a>
 
@@ -295,7 +304,6 @@ body {
 <div class="infobox">
         <hr class="hr2"> 
         <h2><b>Velkommen til mine tidligere opgaver</b></h2>
-        <h4><b>Du kan finde mine opgaver i menu'en i venstre side</b></h4>
         <hr class="hr2">
 </div>     
 
