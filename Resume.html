@@ -116,13 +116,13 @@
     text-align: center;
     background-color: #000000d5;
     padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .infobox{
     font-size: max(0.7vw);
-    max-width: 55vw ;
+    width: 52vw ;
 
     border: 2px solid rgba(255, 81, 0, 0.452);
   font-family: "Audiowide", sans-serif;
@@ -132,7 +132,7 @@
 }
 .Erfaring{
     font-size: max(0.7vw);
-    max-width: 55vw ;
+    max-width: 52vw ;
 
     margin-top: 20px;
     border: 2px solid rgba(255, 81, 0, 0.452);
@@ -143,7 +143,7 @@
 }
 .Skole{
     font-size: max(0.7vw);
-    max-width: 55vw ;
+    max-width: 52vw ;
 
     margin-top:20px;
     border: 2px solid rgba(255, 81, 0, 0.452);
@@ -154,15 +154,15 @@
 }
 .Kompetencer{
 
-    font-size: max(0.5vw);
+    font-size: max(0.65vw);
 margin-top: 30px;
     border: 2px solid rgba(255, 81, 0, 0.452);
   font-family: "Audiowide", sans-serif;
   align-content: center;
   text-align: center;
-  line-height: 3.25vh;
+  line-height: 3.5vh;
   text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -1px -1px 1px rgba(223, 60, 60, 0.904);
-  max-width: 37vw;
+  max-width: 30vw ;
 
 }
 
@@ -194,7 +194,7 @@ height: 300px;
 /* Phone Screens*/
 
 
-@media screen and (max-height: 819px)
+@media screen and (max-width: 419px)
 {.Kompetencer
  {
     max-width: 30vw;
@@ -206,15 +206,16 @@ height: 300px;
 
  }
 }
-@media screen and (max-height: 819px)
+@media screen and (max-width: 419px)
 {.content
  {
 padding-top: 11px;
-
-
+padding-bottom: 10px;
+padding-left: 50px;
+padding-right: 50px;
  }
 }
-@media screen and (max-height: 819px)
+@media screen and (max-width: 419px)
 {.infobox, .Erfaring, .Skole
  {
     max-width: 40vw;
@@ -222,14 +223,14 @@ padding-top: 11px;
     line-height: 1.20vh;
  }
 }
-@media screen and (max-height: 819px)
+@media screen and (max-width: 419px)
 {.Erfaring, .Skole
  {
 margin-top: 10px;
  }
 }
 
-@media screen and (max-height: 819px)
+@media screen and (max-width: 419px)
 {.cv
  {
      font-size: 5.0vw;
@@ -239,39 +240,107 @@ margin-top: 10px;
 
 
 /*BIGGER PHONE SCREENS*/
-@media screen and (min-height: 820px)
+
+
+
+
+@media screen and (max-width: 1800px) and (min-width: 840px)
+{.infobox, .Erfaring, .Skole
+ {
+    max-width: 45vw;
+ }
+}
+
+@media screen and (max-width: 1800px) and (min-width: 840px)
+{.Kompetencer
+ {
+    max-width: 20vw;
+ }
+}
+@media screen and (max-width: 1800px) and (min-width: 840px)
+{.cv
+ {
+font-size: 24px;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 839px) and (min-width: 5px)
+{.infobox, .Erfaring, .Skole
+ {
+    max-width: 35vw;
+    font-size: 0.8vw;
+    line-height: 1.40vh;
+ }
+}
+
+
+
+@media screen and (max-width: 839px) and (min-width: 480px)
+{.Erfaring, .Skole
+ {
+margin-top: 10px;
+ }
+}
+
+
+
+@media screen and (max-width: 839px) and (min-width: 480px)
+{.cv
+ {
+     font-size: 2vw;
+     margin: 10px;
+ }
+}
+@media screen and (max-width: 839px) and (min-width: 480px)
+{.Kompetencer
+ {
+    max-width: 20vw;
+    font-size: 0.8vw;
+    line-height: 2.40vh;
+ }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 479px) and (min-width: 5px)
+{.infobox, .Erfaring, .Skole
+ {
+    max-width: 40vw;
+    font-size: 1.2vw;
+    line-height: 1.30vh;
+ }
+}
+
+@media screen and (max-width: 479px) and (min-width: 5px)
 {.Kompetencer
  {
     max-width: 30vw;
-    font-size: 0.8vw;
-    line-height: 2.25vw;
- }
-}
-@media screen and (min-height: 820px)
-{.infobox, .Erfaring, .Skole
- {
-    max-width: 63vw;
-    font-size: 1.0vw;
-    line-height: 1.75vh;
+    font-size: 1.2vw;
+    line-height: 2.30vh;
  }
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* bigger PC monitor*/
 
 
 
