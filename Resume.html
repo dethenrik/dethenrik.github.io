@@ -93,7 +93,7 @@
     font-family: 'Orbitron';
 }
 .content {
-    height: 165vh;
+    height: 190vh;
     margin: 0 auto;
     color: #f2f2f2;
     text-align: center;
@@ -111,7 +111,7 @@
     border: 2px solid rgba(255, 81, 0, 0.452);
     font-family: 'Orbitron';
     align-content: center;
-    text-align: center;
+    text-align: left;
     text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -1px -1px 1px rgba(223, 60, 60, 0.904);
 }
 .Erfaring{
@@ -123,7 +123,7 @@
     border: 2px solid rgba(255, 81, 0, 0.452);
     font-family: 'Orbitron';
     align-content: center;
-    text-align: center;
+    text-align: left;
     text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -1px -1px 1px rgba(223, 60, 60, 0.904);
 }
 .Skole{
@@ -135,7 +135,7 @@
     border: 2px solid rgba(255, 81, 0, 0.452);
     font-family: 'Orbitron';
     align-content: center;
-    text-align: center;
+    text-align: left;
     text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -1px -1px 1px rgba(223, 60, 60, 0.904);
 }
 .Kompetencer{
@@ -149,6 +149,27 @@
     text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -1px -1px 1px rgba(223, 60, 60, 0.904);
     width: 30vw ;
 }
+.Sprog{
+    letter-spacing: 0.5ch;
+    font-size: max(0.7vw);
+    max-width: 30vw ;
+    margin-top: 20px;
+    border: 2px solid rgba(255, 81, 0, 0.452);
+    font-family: 'Orbitron';
+    align-content: center;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -1px -1px 1px rgba(223, 60, 60, 0.904);
+}
+.overskift{
+    font-size: max(1.7vw);
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+
 /**//**//**//**//**//*MADE SO THE COLUMNS ARE NEXT TO EACH OTHER*//**//**//**//**//**//**//**/
 .columnLeft{
     margin: 0;
@@ -284,7 +305,7 @@
     <div class="columnLeft">
 
     <div class="infobox"><!--FIRST COLUMN RIGHT SIDE-->
-        <h1> Resume</h>
+        <p class="overskift"> Resume</h>
         <hr style="border-color:rgba(255, 81, 0, 0.452);">
         <h4> Hej mit navn er Martin. </h6>
           <h4> Jeg går på skole-oplærings-centret i Ballerup som programmør hvor jeg er igang med Praktikforløb 2 og skal på hovedforløb 2 </h6>
@@ -295,34 +316,40 @@
           <h4><b> Som?</b> : Datateknikker m. speciale i programmering</h4>
       </div>
       <div class="Erfaring"><!--SECOND COLUMN RIGHT SIDE-->
-        <h1> Erfaring </h1>
+        <p class="overskift"> Erfaring </p1>
         <hr style="border-color:rgba(255, 81, 0, 0.452);">
-        <h4><b> - Salgsassistent / Torvets kiosk</b></h4>
-        <h6> Jan 2019 - Jun 2020</h6>
+        <h4><b> Sted: Torvets kiosk</b></h4>
+        <h4><b> Titel: Salgsassistent</b></h4>
+        <h6> Dato : Jan 2019 - Til Jun 2020</h6>
         <hr style="border-color:rgba(255, 81, 0, 0.452);">
-        <h4><b> - Lagermedarbejder / Expressvikar</b></h4>
-        <h6> Maj 2017 - Jan 2018 </h6>
+        <h4><b> Sted: Expressvikar</b></h4>
+        <h4><b> Titel: Lagermedarbejder</b></h4>
+        <h6> Dato: Maj 2017 - Jan 2018 </h6>
         <hr style="border-color:rgba(255, 81, 0, 0.452);">
-        <h4><b> - Kassemedarbejder / Netto</b></h4>
-        <h6> Aug 2015 - Mar 2016</h6>
+        <h4><b> Sted: Netto</b></h4>
+        <h4><b> Titel Kassemedarbejder </b></h4>
+        <h6> Dato: Aug 2015 - Mar 2016</h6>
       </div>
       <div class="Skole"><!--THIRD COLUMN RIGHT SIDE-->
-        <h1><b> Skole </b></h1>
+        <p class="overskift"><b> Skole </b></h1>
         <hr style="border-color:rgba(255, 81, 0, 0.452);">
-        <h4><b> - TEC skole-oplærings-centret / Data-teknikker m. speciale i programmering</b></h4>
-        <h6> Aug 2021 - 2026</h6>
+        <h4><b> Sted: TEC skole-oplærings-centret</b></h4>
+        <h4><b> Titel: Data-teknikker m. speciale i programmering</b></h4>
+        <h6> Dato: Aug 2021 - 2026</h6>
         <hr style="border-color:rgba(255, 81, 0, 0.452);">
-        <h4><b> - TEC / Godsvognschauffør</b></h4>
-        <h6> Aug 2019 - Dec 2019 </h6>
+        <h4><b> Sted: TEC</b></h4>
+        <h4><b> Titel: Godsvognschauffør</b></h4>
+        <h6> Dato: Aug 2019 - Dec 2019 </h6>
         <hr style="border-color:rgba(255, 81, 0, 0.452);">
-        <h4><b> - Folkeskole - hendriksholmskole</b></h4>
-        <h6> Aug 2006 - Juni 2015</h6>
+        <h4><b> Sted: Folkeskole - hendriksholmskole</b></h4>
+        <h4><b> Titel Folkeskole - hendriksholmskole</b></h4>
+        <h6> Dato: Aug 2006 - Juni 2015</h6>
       </div>
     </div>
 <!-- dette er starten af højre kolonne der floater left -->
 <div class="columnRight">
       <div class="Kompetencer"><!--FIRST COLUMN LEFT SIDE-->
-        <h1><b> KOMPETENCER </b></h1>
+        <p class="overskift"><b> KOMPETENCER </b></h1>
         <hr style="border-color:rgba(255, 81, 0, 0.452);">
         <h4> HTML - ADVANCED BEGINNER</h4>
         <hr style="border-color:rgba(255, 81, 0, 0.452);">
@@ -352,6 +379,25 @@
         <hr style="border-color:rgba(255, 81, 0, 0.452);">
         <h4> GITHUB - ADVANCED BEGINNER</h4>
       </div>
+      <div class="Sprog"><!--SECOND COLUMN RIGHT SIDE-->
+        <h1> Erfaring </h1>
+        <hr style="border-color:rgba(255, 81, 0, 0.452);">
+        <h4><b> Sted: Torvets kiosk</b></h4>
+        <h4><b> Titel: Salgsassistent</b></h4>
+        <h6> Dato : Jan 2019 - Til Jun 2020</h6>
+        <hr style="border-color:rgba(255, 81, 0, 0.452);">
+        <h4><b> Sted: Expressvikar</b></h4>
+        <h4><b> Titel: Lagermedarbejder</b></h4>
+        <h6> Dato: Maj 2017 - Jan 2018 </h6>
+        <hr style="border-color:rgba(255, 81, 0, 0.452);">
+        <h4><b> Sted: Netto</b></h4>
+        <h4><b> Titel Kassemedarbejder </b></h4>
+        <h6> Dato: Aug 2015 - Mar 2016</h6>
+      </div>
+
+
+
+
     </div>
 </div>
 </div>     
