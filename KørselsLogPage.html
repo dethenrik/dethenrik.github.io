@@ -10,18 +10,15 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif, 'Orbitron';
   background-image: url('https://github.com/dethenrik/dethenrik.github.io/blob/main/images/egor-klyuchnyk.jpg?raw=true');
   z-index: -2;
 }
-
 /* Style the top navigation bar */
 .sidenav {
     font-family: 'Orbitron';
-
 height: 100%;
 width: 0;
 position: fixed;
@@ -33,10 +30,8 @@ overflow-x: hidden;
 transition: 0.5s;
 padding-top: 60px;
 }
-
 .sidenav a, .dropdown-btn {
     text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -2px -2px 3px rgba(223, 60, 60, 0.904);
-
 padding: 16px 8px 32px 32px;
 text-decoration: none;
 font-size: 25px;
@@ -44,11 +39,9 @@ color: #ffffff;
 display: block;
 transition: 0.3s;
 }
-
 .sidenav a:hover, .dropdown-btn:hover {
     color: rgba(255, 145, 0, 0.699);
 }
-
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -59,18 +52,15 @@ transition: 0.3s;
 .span{
   cursor: pointer;
   font-size: 30px;
-
     margin: 5;
     position: fixed;
     top: 10px;
   left: 15px;
 }
 #main{
-    
     margin: 0;
     transition: margin-left .5s;
 }
-
 /*SIDENAV DROP MENU*/
 .dropdown-container {
   display: none;
@@ -79,28 +69,19 @@ transition: 0.3s;
 .dropdown-container a{
     font-family: 'Orbitron';
   text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -2px -2px 3px rgba(223, 60, 60, 0.904);
-
     font-size: 15px;
 }
 .fa-caret-down {
   float: right;
   padding-right: 8px;
-
 }
 .dropdown-btn{
     font-family: 'Orbitron';
-
     margin-right: 200px !important;
     background-color: rgba(0, 0, 0, 0);
     border: rgba(0, 0, 0, 0);
 }
-
-
 /**/
-
-
-
-
 /* Style the content */
 .content {
     height: 100vh;
@@ -109,7 +90,6 @@ transition: 0.3s;
     background-color: #000000d5;
     padding-left: 30px;
     padding-right: 30px;
-
 }
 
 .infobox{
@@ -131,13 +111,7 @@ transition: 0.3s;
     text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -2px -2px 3px rgba(223, 60, 60, 0.904);
     font-size:  36px;
 }
-
-
-
-
-
 /* Media Screen*/
-
 /* Phone Screens*/
 @media screen and (max-height: 890px)
 {.content, .infobox, .h2
@@ -161,54 +135,33 @@ transition: 0.3s;
     padding: 0%;
  }   
 }
-
-
-
-
-
-
-
 /* SMALL PHONE SCREEN*/
 @media screen and (max-height: 780px)
 {.infobox
  {
     font-size: 8px !important;
-
  }   
 }
-
-
-
-
-
-
-
 /* bigger PC monitor*/
 @media screen and (min-width: 1900px)
 {.infobox
  {
     font-size: 2.5vmax;
-    
  }
 }
 /* normal size + smaller*/
-
 @media screen and (max-width: 1400px)
 {.infobox
  {
     font-size: 2.5vmax;
-    
  }
 }
-
 </style>
 </head>
 <body>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="./index.html">Forside</a>
-
-        
         <button class="dropdown-btn">Opgaver 
             <i class="fa fa-caret-down"></i>
           </button>
@@ -220,16 +173,10 @@ transition: 0.3s;
         <a href="./Resume.html">CV</a>
         <a href="./Info.html">Information</a>
         <a href="./progress.html">progress</a>
-
         <a href="./index.html">Tilbage</a>
-
       </div>
-      
       <!-- Use any element to open the sidenav -->
-
       <div id="main">
-
-
 <div class="content" >
     <span class="span" onclick="openNav()">&#9776;</span>
 <h2 class="h2">
@@ -408,23 +355,19 @@ transition: 0.3s;
         <hr class="hr2">
 </div>     
   </div>
-
 </div>
 <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
     }
-    
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
 </script>
-
 <script>
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
-
 for (i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -437,9 +380,5 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 </script>
-
-
-
-
 </body>
 </html>

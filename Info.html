@@ -10,7 +10,6 @@
   * {
     box-sizing: border-box;
   }
-  
   body {
     letter-spacing: 0.5ch;
     margin: 0;
@@ -18,11 +17,9 @@
     background-image: url('https://github.com/dethenrik/dethenrik.github.io/blob/main/images/egor-klyuchnyk.jpg?raw=true');
     z-index: -2;
   }
-  
   /* Style the top navigation bar */
   .sidenav {
     font-family: 'Orbitron';
-
     height: 100%;
     width: 0;
     position: fixed;
@@ -34,10 +31,8 @@
     transition: 0.5s;
     padding-top: 60px;
   }
-  
   .sidenav a, .dropdown-btn {
   text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -2px -2px 3px rgba(223, 60, 60, 0.904);
-
     padding: 16px 8px 32px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -45,11 +40,9 @@
     display: block;
     transition: 0.3s;
   }
-  
   .sidenav a:hover, .dropdown-btn:hover {
       color: rgba(255, 145, 0, 0.699);
   }
-  
   .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -60,45 +53,36 @@
   .span{
     cursor: pointer;
     font-size: 30px;
-  
       margin: 5;
       position: fixed;
       top: 10px;
     left: 15px;
   }
   #main{
-      
       margin: 0;
       transition: margin-left .5s;
   }
-  
   /*SIDENAV DROP MENU*/
   .dropdown-container {
-
     display: none;
     padding-left: 8px;
   }
   .dropdown-container a{
     font-family: 'Orbitron';
   text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -2px -2px 3px rgba(223, 60, 60, 0.904);
-
     font-size: 15px;
   }
   .fa-caret-down {
     float: right;
     padding-right: 8px;
-  
   }
   .dropdown-btn{
     font-family: 'Orbitron';
   text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -2px -2px 3px rgba(223, 60, 60, 0.904);
-
     margin-right: 200px !important;
-
       background-color: rgba(0, 0, 0, 0);
       border: rgba(0, 0, 0, 0);
   }
-
 /* Style the content */
 .content {
     height: 100vh;
@@ -108,12 +92,10 @@
     background-color: #000000d5;
     padding-left: 30px;
     padding-right: 30px;
-
 }
 .selfie{
   margin-top: 50px;
     max-width: 33%;
-
   border-radius: 50%;
 }
 .infobox{
@@ -122,25 +104,18 @@
   text-align: center;
   text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -1px -1px 1px rgba(223, 60, 60, 0.904);
     width: 100%;
-
 }
 .infobox a{
   text-decoration:none;
   color: #f2f2f2;
 }
-
 /* Style the footer */
 .footer {
     text-align: center;
   padding: 10px;
 
 }
-
-
-
-
 /* Media Screen*/
-
 /* Phone Screens*/
 @media screen and (max-height: 819px)
 {.content
@@ -168,8 +143,6 @@
     font-size: 13px !important;
  }
 }
-
-
 @media screen and (min-height: 820px)
 {.infobox
  {
@@ -182,28 +155,21 @@
  {
    margin-top: 80px;
   max-width: 90%;
-
  }   
 }
 /* bigger PC monitor*/
-
 @media screen and (min-width: 1000px)
 {.selfie
  {
     max-width: 30%;
-    
  }
 }
-
 </style>
 </head>
 <body>
-
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="./index.html">Menu</a>
-
-        
         <button class="dropdown-btn">Opgaver 
             <i class="fa fa-caret-down"></i>
           </button>
@@ -215,16 +181,12 @@
         <a href="./Resume.html">CV</a>
         <a href="./Info.html">Information</a>
         <a href="./progress.html">progress</a>
-
         <a href="./index.html">Back</a>
       </div>
       </div>
-
       <div id="main">
-
 <div class="content" >
   <span class="span" onclick="openNav()">&#9776;</span>
-
         <img class="selfie" src="https://github.com/dethenrik/dethenrik.github.io/blob/main/images/mig.png?raw=true" alt="Avatar">
         <hr class="hr2"> 
 <div class="infobox">
@@ -238,22 +200,18 @@
 </div>     
   </div>
 </div>
-
   <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
     }
-    
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
 </script>
-
 <script>
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
-
 for (i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function() {
     this.classList.toggle("active");
