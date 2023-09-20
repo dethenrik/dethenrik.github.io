@@ -7,5 +7,6 @@
 ![Foleskolebevis_LI](https://github.com/dethenrik/dethenrik.github.io/assets/98741878/7a7606ed-88eb-4157-98c0-42b913cee4d4)
 
 ![hovedforløb 1 bevis_LI](https://github.com/dethenrik/dethenrik.github.io/assets/98741878/24c56266-de91-4a09-b051-b27818a75ec0)
-![Hovedforløb 2 bevis_LI](https://github.com/dethenrik/dethenrik.github.io/assets/98741878/4d0b9463-c0b0-4297-9677-dd1ee76b2e74)
+![Hovedforløb 2 bevis_LI](https://github.com/dethenrik/dethenrik.github.io/assets/98741878/99f074af-8a70-4474-9dc2-6220d19f5ae0)
+
 ![Grundforløb bevis_LI (2)](https://github.com/dethenrik/dethenrik.github.io/assets/98741878/699bea26-1e7d-4fb0-aa1b-d0a7ed8096ba)
