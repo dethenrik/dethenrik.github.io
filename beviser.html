@@ -19,7 +19,6 @@ body {
 /* Style the top navigation bar */
 .sidenav {
     font-family: 'Alice';
-
 height: 100%;
 width: 0;
 position: fixed;
@@ -62,7 +61,6 @@ transition: 0.3s;
     margin: 0;
     transition: margin-left .5s;
 }
-
 /*SIDENAV DROP MENU*/
 .dropdown-container {
   display: none;
@@ -86,7 +84,9 @@ transition: 0.3s;
 /**/
 /* Style the content */
 .content {
-    height: 100vh;
+    width: 100%;
+    min-height: 135vh;
+  height: auto;
     margin: 0 auto;
     color: #f2f2f2;
     text-align: center;
@@ -95,59 +95,63 @@ transition: 0.3s;
     padding-right: 30px;
 }
 .infobox{
-    width: 100%;
-    padding-top: 150px;
-    font-family: 'Alice' !important;
-    text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -2px -2px 3px rgba(223, 60, 60, 0.904);
-    font-size: 40px;
+    padding-top: 100px;
+    display: flex;
 }
-.timeline{
-  
 
-  padding: 10px;
-  border-color: rgba(223, 60, 60, 0.904);
-  border-style: inset;
+.column {
+  float: left;
+  width: 100%;
 }
-/* Media Screen*/
 
-/* Phone Screens*/
-@media screen and (max-width: 800px)
-{.topnav, .content, .selfie, .infobox, .footer
- {
-    max-width: 100%;
- }
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+  width: 20vw;
+  border: 5px solid rgba(165, 0, 0, 0.692);
 }
-@media screen and (max-height: 700px)
-{.infobox
- {
-     padding-top: 200px;
-    line-height: 15px;
-    font-size: 13px !important;
- }   
-}
-@media screen and (max-height: 800px)
-{.infobox
- {
-    padding-top: 200px;
 
-    line-height: 15px;
-    font-size: 13px !important;
- }   
+.column img:hover {
+  opacity: 1;
 }
-/* bigger PC monitor*/
-@media screen and (min-width: 1900px)
-{.infobox
- {
-    font-size: 2.5vmax;
- }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-/* normal size + smaller*/
-@media screen and (max-width: 1400px)
-{.infobox
- {
-    font-size: 2.5vmax;
- }
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+  margin-top: 50px;
 }
+
+/* Expanding image text */
+#imgtext {
+  text-align: center;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Alice' !important;
+
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
 </style>
 </head>
 <body>
@@ -166,49 +170,44 @@ transition: 0.3s;
         <a href="./Info.html">Information</a>
         <a href="./progress.html">Timeline</a>
         <a href="./beviser.html">Beviser</a>
-      </div>
-      <!-- Use any element to open the sidenav -->
-      <div id="main">
-<div class="content" >
-    <span class="span" onclick="openNav()">&#9776;</span>
-<div class="infobox">
-  <div class="card-info">
-    <div>
-      <p> TIMELINE</p>
-
     </div>
-  </div>
-      <div class="timeline">
-        <iframe width="100%" height="400" src="https://time.graphics/embed?v=1&id=833684" frameborder="0" allowfullscreen></iframe>
-      </div>
-</div>     
-  </div>
+      <!-- Use any element to open the sidenav -->
+<div id="main">
+    <div class="content" >
+    <span class="span" onclick="openNav()">&#9776;</span>
+        <div class="infobox">
+                <div class="column">
+                    <img src="https://user-images.githubusercontent.com/98741878/269182667-7a7606ed-88eb-4157-98c0-42b913cee4d4.jpg" alt="Folkeskole bevis" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="https://user-images.githubusercontent.com/98741878/269271140-699bea26-1e7d-4fb0-aa1b-d0a7ed8096ba.jpg" alt="GF2 Afgangs bevis" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="https://user-images.githubusercontent.com/98741878/269182689-24c56266-de91-4a09-b051-b27818a75ec0.jpg" alt="Hovedforløb 1 afgangs bevis" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="https://user-images.githubusercontent.com/98741878/269271520-99f074af-8a70-4474-9dc2-6220d19f5ae0.jpg" alt="Hovedforløb 2 afgangs bevis" onclick="myFunction(this);">
+                </div>
+              </div>
+            
+              <hr>
+              
+              <!-- The expanding image container -->
+              <div class="container">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+                <!-- Expanded image -->
+                <img id="expandedImg" style="width: 50%">
+              
+                <!-- Image text -->
+                <div id="imgtext"></div>
+              </div>
+              <hr>
+
+        </div>     
+    </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -238,10 +237,18 @@ for (i = 0; i < dropdown.length; i++) {
 }
 </script>
 <script>
-$('#el').daterangeBar({
-    'startdate': '31-01-2021',
-    'endDate': '31-12-2016',
-    'privateColors': true
-  });</script>
+function myFunction(imgs) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg");
+    // Get the image text
+    var imgText = document.getElementById("imgtext");
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    imgText.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+  }
+</script>
 </body>
 </html>
