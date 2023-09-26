@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://kit.fontawesome.com/319f0a6434.js" crossorigin="anonymous"></script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://user-images.githubusercontent.com/98741878/270642996-6f2c1a4d-4a23-467d-9943-51fe1f366f43.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optionally, you can fix the background in place */
+  background-position-y: -290px;
+  z-index: -2;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Container for flexboxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Create three equal columns */
+.column {
+  flex: 1;
+  padding: 10px;
+  min-width: 300px;
+}
+
+/* Style the footer */
+.button-group {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+.button-profil {
+    height: 150px;
+    width: 200px;
+    outline: none;
+    margin-top: 0px;
+    border-top: 2px solid #dddddd;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #dddddd;
+    border-left: 3px solid #dddddd;
+    background-color: #ffffff;
+}
+.button-opgaver, .button-CV, .button-timeline {
+    height: 150px;
+    width: 200px;
+    border-top: 2px solid #dddddd;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #dddddd;
+    border-left: 2px solid #dddddd;
+    background-color: #ffffff;
+}
+.button-beviser {
+    height: 150px;
+    width: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid #dddddd;
+    border-bottom: 2px solid #ffffff;
+    border-right: 3px solid #dddddd;
+    border-left: 2px solid #dddddd;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+a:link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none !important;
+    padding-top: 35%;
+    
+}
+a:hover{
+    
+}
+.material-icons {
+    display: inline-block;
+
+
+}
+.fas{
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .column .button-group{
+    flex-basis: 100%;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<div class="button-group">
+    <button class="button-profil"><a class="fas fa-person" href="./Info.html">PROFILE</a></button>
+    <button class="button-opgaver"><a class="fas fa-list-check" href="./Info.html">OPGAVER</a></button>
+    <button class="button-CV"><a class="fas fa-file" href="./Info.html">CV</a></button>
+    <button class="button-timeline"><a class="fas fa-timeline" href="./Info.html">TIMELINE</a></button>
+    <button class="button-beviser"><a class="fas fa-scroll" href="./Info.html">BEVISER</a></button>
+</div>
+
+<div class="row">
+    <div class="column" style="background-color:#aaa;">Column</div>
+    <div class="column" style="background-color:#ccc;">Column</div>
+  </div>
+
+
+</body>
+</html>
