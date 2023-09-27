@@ -1,228 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>&#128151; Information &#128151;</title>
+<title>CSS Template</title>
 <meta charset="utf-8">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice&effect=neon|outline|emboss|shadow-multiple">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|orbitron">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    letter-spacing: 0.5ch;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif, 'Alice';
-    background-image: url('https://github.com/dethenrik/dethenrik.github.io/blob/main/images/egor-klyuchnyk.jpg?raw=true');
-    z-index: -2;
-  }
-  /* Style the top navigation bar */
-  .sidenav {
-    font-family: 'Alice';
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.877);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  .sidenav a, .dropdown-btn {
-  text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -2px -2px 3px rgba(223, 60, 60, 0.904);
-    padding: 16px 8px 32px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s;
-  }
-  .sidenav a:hover, .dropdown-btn:hover {
-      color: rgba(255, 145, 0, 0.699);
-  }
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  .span{
-    cursor: pointer;
-    font-size: 30px;
-      margin: 5;
-      position: fixed;
-      top: 10px;
-    left: 15px;
-  }
-  #main{
-      margin: 0;
-      transition: margin-left .5s;
-  }
-  /*SIDENAV DROP MENU*/
-  .dropdown-container {
-    display: none;
-    padding-left: 8px;
-  }
-  .dropdown-container a{
-    font-family: 'Alice';
-  text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -2px -2px 3px rgba(223, 60, 60, 0.904);
-    font-size: 15px;
-  }
-  .fa-caret-down {
-    float: right;
-    padding-right: 8px;
-  }
-  .dropdown-btn{
-    font-family: 'Alice';
-  text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -2px -2px 3px rgba(223, 60, 60, 0.904);
-    margin-right: 200px !important;
-      background-color: rgba(0, 0, 0, 0);
-      border: rgba(0, 0, 0, 0);
-  }
-/* Style the content */
-.content {
-    height: 100vh;
-    margin: 0 auto;
-    color: #f2f2f2;
-    text-align: center;
-    background-color: #000000d5;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.selfie{
-  margin-top: 50px;
-    max-width: 33%;
-  border-radius: 50%;
-}
-.infobox{
-  font-family: 'Alice';
-  align-content: center;
-  text-align: center;
-  text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -1px -1px 1px rgba(223, 60, 60, 0.904);
-    width: 100%;
-}
-.infobox a{
-  text-decoration:none;
-  color: #f2f2f2;
-}
-/* Style the footer */
-.footer {
-    text-align: center;
-  padding: 10px;
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://kit.fontawesome.com/319f0a6434.js" crossorigin="anonymous"></script>
 
+<style>
+* {
+  box-sizing: border-box;
 }
-/* Media Screen*/
-/* Phone Screens*/
-@media screen and (max-height: 819px)
-{.content
- {
-   padding: 10px !important;
- }
+
+body {
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  background-image: url('https://user-images.githubusercontent.com/98741878/270642996-6f2c1a4d-4a23-467d-9943-51fe1f366f43.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -290px;
 }
-@media screen and (max-height: 819px)
-{.topnav, .selfie, .infobox, .footer
- {
-    max-width: 100%;
- }
+/*--------------------------------------------------*/
+
+/*-----------------NAVBAR---------------------------*/
+
+.button-group {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
 }
-@media screen and (max-height: 819px)
-{.selfie
- {
-   margin-top: 35px;
-    max-width: 80%;
- }
+.button-profil {
+    height: 150px;
+    width: 200px;
+    outline: none;
+    margin-top: 0px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #dddddd;
+    border-left: 3px solid #dddddd;
+    background-color: #ffffff;
 }
-@media screen and (max-height: 819px)
-{.infobox
- {
-  line-height: 12px;
-    font-size: 13px !important;
- }
+.button-opgaver, .button-CV, .button-timeline {
+    height: 150px;
+    width: 200px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #dddddd;
+    border-left: 2px solid #dddddd;
+    background-color: #ffffff;
 }
-@media screen and (min-height: 820px)
-{.infobox
- {
-    line-height: 13px;
-    font-size: 13px !important;
- }   
+.button-beviser {
+    height: 150px;
+    width: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-right: 3px solid #dddddd;
+    border-left: 2px solid #dddddd;
+    background-color: #ffffff;
+    cursor: pointer;
 }
-@media screen and (min-height: 820px)
-{.selfie
- {
-   margin-top: 80px;
-  max-width: 90%;
- }   
+a:link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none !important;
+    padding-top: 35%;
 }
-/* bigger PC monitor*/
-@media screen and (min-width: 1000px)
-{.selfie
- {
-    max-width: 30%;
- }
+a:hover{
+    color: rgb(39, 2, 141, 0.39);;
+    border-bottom: 2px solid rgba(39, 2, 141, 0.39);
 }
+.material-icons {
+    display: inline-block;
+}
+.fas{
+    font-size: 20px;
+}
+.PB{
+  display: block;
+  height: 150px;
+  width: 150px;
+  border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #dddddd;
+}
+/*--------------------------------------------*/
+
+/*----------------COLUMN CONTENT--------------*/
+
+.Box{
+  background-color: #ffffff8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Card{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 3px solid darkblue;
+  border-radius: 24px;
+  max-width: 370px;
+  width: auto;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin: 10%;
+}
+.img_1{
+  display: flex;
+  align-items: center;
+  height: 25vh;
+  width: auto;
+  border-radius: 50%;
+  background-color: darkblue;
+  padding: 3px;
+}
+.Name{
+  text-align: center;
+  font-family: 'alice';
+  font-size: 2vh;
+  font-weight: bolder;
+  margin-top: 50px;
+}
+.Work, .Forløb, .E-mail, .Tlf{
+  text-decoration: none !important;
+  text-align: center;
+  font-family: 'alice';
+  padding-top: 0 !important;
+  color: black;
+}
+
+
+/*--------------------------------------------*/
+
+/*----------------MEDIA SCREENS----------------------------*/
+
+
+@media (max-width: 913px) {
+  .button-group {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+.button-profil {
+    height: 75px;
+    width: 150px;
+    outline: none;
+    margin-top: 0px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #dddddd;
+    border-left: 1.5px solid #dddddd;
+    background-color: #ffffff;
+}
+.button-opgaver, .button-CV, .button-timeline {
+  height: 75px;
+    width: 150px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+.button-beviser {
+  height: 75px;
+    width: 150px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1.5px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+a:link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none !important;
+    padding-top: 35%;
+}
+a:hover{
+    color: rgb(39, 2, 141, 0.39);;
+    border-bottom: 2px solid rgba(39, 2, 141, 0.39);
+}
+.material-icons {
+    display: inline-block;
+}
+.fas{
+    font-size: 10px;
+}
+.PB{
+  display: block;
+  height: 75px;
+  width: 75px;
+  border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #dddddd;
+}}
+@media (max-width: 913px) {
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  background: none;
+  z-index: -2;
+}
+}
+/*--------------------------------------------*/
+
+
+
 </style>
+
 </head>
 <body>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="./index.html">Menu</a>
-        <button class="dropdown-btn">Opgaver 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-container">
-            <a href="./KørselsLogPage.html">Hangman Game</a>
-            <a href="#">Film/Music Bibliotek</a>
-            <a href="#">KørselsLog</a>
-          </div>
-        <a href="./Resume.html">CV</a>
-        <a href="./Info.html">Information</a>
-        <a href="./progress.html">Timeline</a>
-        <a href="./beviser.html">Beviser</a>
-      </div>
-      </div>
-      <div id="main">
-<div class="content" >
-  <span class="span" onclick="openNav()">&#9776;</span>
-        <img class="selfie" src="https://github.com/dethenrik/dethenrik.github.io/blob/main/images/mig.png?raw=true" alt="Avatar">
-        <hr class="hr2"> 
-<div class="infobox">
-          <h4 class="bi bi-pencil"><b> Information</b></h4> 
-          <p class="bi bi-briefcase">   Datateknikker m. speciale i programmering</p>
-          <p class="bi bi-house-door">   Rødovre, DK</p>
-          <p <li class="bi bi-envelope link"> <a href=" mailto:Almand1999@hotmail.com"> Almand1999@hotmail.com </a> </li> </p>
-          <p class="bi bi-telephone number">   +45 27 14 68 70</p>
-          <p class="outset"></p>
-          <hr class="hr2"> 
-</div>     
+
+<div class="button-group">
+    <img class="PB"src="https://user-images.githubusercontent.com/98741878/270876721-ab1b31b5-2a5b-487a-97fd-ee23d404c20b.png" alt="PB">
+    <button class="button-profil"><a class="fas fa-person" href="./Info.html"> PROFILE</a></button>
+    <button class="button-opgaver"><a class="fas fa-list-check" href="./Assignments.html"> OPGAVER</a></button>
+    <button class="button-CV"><a class="fas fa-file" href="./Resume.html"> CV</a></button>
+    <button class="button-timeline"><a class="fas fa-timeline" href="./progress.html"> TIMELINE</a></button>
+    <button class="button-beviser"><a class="fas fa-scroll" href="./beviser.html"> BEVISER</a></button>
+</div>
+
+
+<div class="Box">
+  <div class="Card">
+    <img class="img_1" src="https://user-images.githubusercontent.com/98741878/270876721-ab1b31b5-2a5b-487a-97fd-ee23d404c20b.png"></img>
+    <p class="Name">Martin Almand Berthelsen</p>
+    <p class="Work">DataTekniker m. speciale i programmering</p>
+    <p class="Forløb">Praktikforløb 3</p>
+    <a class="E-mail" href=" mailto:Almand1999@hotmail.com"> Almand1999@hotmail.com </a>
+    <p class="Tlf">+45 27 14 68 70</p>
   </div>
 </div>
-  <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-</script>
-<script>
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
-</script>
+
+
 </body>
 </html>

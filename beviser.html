@@ -1,133 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>&#128151; Opgaver &#128151;</title>
+<title>CSS Template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice&effect=neon|outline|emboss|shadow-multiple">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Orbitron">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://kit.fontawesome.com/319f0a6434.js" crossorigin="anonymous"></script>
+
 <style>
 * {
   box-sizing: border-box;
 }
+
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, 'Alice';
-  background-image: url('https://github.com/dethenrik/dethenrik.github.io/blob/main/images/egor-klyuchnyk.jpg?raw=true');
-  z-index: -2;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  background-image: url('https://user-images.githubusercontent.com/98741878/270642996-6f2c1a4d-4a23-467d-9943-51fe1f366f43.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -290px;
 }
-/* Style the top navigation bar */
-.sidenav {
-    font-family: 'Alice';
-height: 100%;
-width: 0;
-position: fixed;
-z-index: 1;
-top: 0;
-left: 0;
-background-color: rgba(0, 0, 0, 0.877);
-overflow-x: hidden;
-transition: 0.5s;
-padding-top: 60px;
-}
-.sidenav a, .dropdown-btn {
-    text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -2px -2px 3px rgba(223, 60, 60, 0.904);
-padding: 16px 8px 32px 32px;
-text-decoration: none;
-font-size: 25px;
-color: #ffffff;
-display: block;
-transition: 0.3s;
-}
-.sidenav a:hover, .dropdown-btn:hover {
-    color: rgba(255, 145, 0, 0.699);
-}
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-.span{
-  cursor: pointer;
-  font-size: 30px;
-    margin: 5;
+/*--------------------------------------------------*/
+
+/*-----------------NAVBAR---------------------------*/
+
+.button-group {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
     position: fixed;
-    top: 10px;
-  left: 15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
 }
-#main{
-    margin: 0;
-    transition: margin-left .5s;
+.button-profil {
+    height: 150px;
+    width: 200px;
+    outline: none;
+    margin-top: 0px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #dddddd;
+    border-left: 3px solid #dddddd;
+    background-color: #ffffff;
 }
-/*SIDENAV DROP MENU*/
-.dropdown-container {
-  display: none;
-  padding-left: 8px;
+.button-opgaver, .button-CV, .button-timeline {
+    height: 150px;
+    width: 200px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #dddddd;
+    border-left: 2px solid #dddddd;
+    background-color: #ffffff;
 }
-.dropdown-container a{
-    font-family: 'Alice';
-  text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5), -2px -2px 3px rgba(223, 60, 60, 0.904);
-    font-size: 15px;
+.button-beviser {
+    height: 150px;
+    width: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-right: 3px solid #dddddd;
+    border-left: 2px solid #dddddd;
+    background-color: #ffffff;
+    cursor: pointer;
 }
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-}
-.dropdown-btn{
-    font-family: 'Alice';
-    margin-right: 200px !important;
-    background-color: rgba(0, 0, 0, 0);
-    border: rgba(0, 0, 0, 0);
-}
-/**/
-/* Style the content */
-.content {
+a:link {
+    display: block;
+    height: 100%;
     width: 100%;
-    min-height: 135vh;
-  height: auto;
-    margin: 0 auto;
+    text-decoration: none !important;
+    padding-top: 35%;
+}
+a:hover{
+    color: rgb(39, 2, 141, 0.39);;
+    border-bottom: 2px solid rgba(39, 2, 141, 0.39);
+}
+.material-icons {
+    display: inline-block;
+}
+.fas{
+    font-size: 20px;
+}
+.PB{
+  display: block;
+  height: 150px;
+  width: 150px;
+  border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #dddddd;
+}
+/*--------------------------------------------*/
+
+/*----------------COLUMN CONTENT--------------*/
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 15%;
+    margin: 0;
     color: #f2f2f2;
     text-align: center;
-    background-color: #000000d5;
-    padding-left: 30px;
-    padding-right: 30px;
+    flex-direction: column-reverse;
+    background-color: #ffffff8f;
 }
 .infobox{
-    padding-top: 100px;
+  height: 1vh;
+
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .column {
-  float: left;
-  width: 100%;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1vw;
 
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8;
-  cursor: pointer;
-  width: 20vw;
-  border: 5px solid rgba(165, 0, 0, 0.692);
 }
-
-.column img:hover {
-  opacity: 1;
+.photo{
+    max-width: 100%;
+    height: auto;
 }
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .container {
   position: relative;
   display: none;
-  margin-top: 50px;
+  margin-bottom: 11vh;
 }
 
 /* Expanding image text */
@@ -136,6 +146,7 @@ transition: 0.3s;
   bottom: 15px;
   left: 15px;
   color: white;
+  text-shadow: 0.5px 0.5px 0.5px black;
   font-size: 20px;
   font-family: 'Alice' !important;
 
@@ -146,110 +157,163 @@ transition: 0.3s;
   position: absolute;
   top: 10px;
   right: 15px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 35px;
   cursor: pointer;
 }
 
 
+/*--------------------------------------------*/
+
+/*----------------MEDIA SCREENS----------------------------*/
+
+
+@media (max-width: 913px) {
+  .button-group {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+.button-profil {
+    height: 75px;
+    width: 150px;
+    outline: none;
+    margin-top: 0px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #dddddd;
+    border-left: 1.5px solid #dddddd;
+    background-color: #ffffff;
+}
+.button-opgaver, .button-CV, .button-timeline {
+  height: 75px;
+    width: 150px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+.button-beviser {
+  height: 75px;
+    width: 150px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1.5px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+a:link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none !important;
+    padding-top: 35%;
+}
+a:hover{
+    color: rgb(39, 2, 141, 0.39);;
+    border-bottom: 2px solid rgba(39, 2, 141, 0.39);
+}
+.material-icons {
+    display: inline-block;
+}
+.fas{
+    font-size: 10px;
+}
+.PB{
+  display: block;
+  height: 75px;
+  width: 75px;
+  border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #dddddd;
+}}
+@media (max-width: 913px) {
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  background: none;
+  z-index: -2;
+}
+}
+/*--------------------------------------------*/
+
+
+
 </style>
+
 </head>
 <body>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="./index.html">Forside</a>
-        <button class="dropdown-btn">Opgaver 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-container">
-            <a href="./KørselsLogPage.html">Hangman Game</a>
-            <a href="#">Film/Music Bibliotek</a>
-            <a href="#">KørselsLog</a>
-          </div>
-        <a href="./Resume.html">CV</a>
-        <a href="./Info.html">Information</a>
-        <a href="./progress.html">Timeline</a>
-        <a href="./beviser.html">Beviser</a>
-        <a href="./NySide.html">Ny side</a>
-    </div>
-      <!-- Use any element to open the sidenav -->
-<div id="main">
-    <div class="content" >
-    <span class="span" onclick="openNav()">&#9776;</span>
-        <div class="infobox">
-                <div class="column">
-                    <img src="https://user-images.githubusercontent.com/98741878/269182667-7a7606ed-88eb-4157-98c0-42b913cee4d4.jpg" alt="Folkeskole bevis" onclick="myFunction(this);">
-                </div>
-                <div class="column">
-                  <img src="https://user-images.githubusercontent.com/98741878/269271140-699bea26-1e7d-4fb0-aa1b-d0a7ed8096ba.jpg" alt="GF2 Afgangs bevis" onclick="myFunction(this);">
-                </div>
-                <div class="column">
-                  <img src="https://user-images.githubusercontent.com/98741878/269182689-24c56266-de91-4a09-b051-b27818a75ec0.jpg" alt="Hovedforløb 1 afgangs bevis" onclick="myFunction(this);">
-                </div>
-                <div class="column">
-                    <img src="https://user-images.githubusercontent.com/98741878/269271520-99f074af-8a70-4474-9dc2-6220d19f5ae0.jpg" alt="Hovedforløb 2 afgangs bevis" onclick="myFunction(this);">
-                </div>
-              </div>
-            
-              <hr>
-              
-              <!-- The expanding image container -->
-              <div class="container">
-                <!-- Close the image -->
-                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
-                <!-- Expanded image -->
-                <img id="expandedImg" style="width: 50%">
-              
-                <!-- Image text -->
-                <div id="imgtext"></div>
-              </div>
-              <hr>
-
-        </div>     
-    </div>
+<div class="button-group">
+    <img class="PB"src="https://user-images.githubusercontent.com/98741878/270876721-ab1b31b5-2a5b-487a-97fd-ee23d404c20b.png" alt="PB">
+    <button class="button-profil"><a class="fas fa-person" href="./Info.html"> PROFILE</a></button>
+    <button class="button-opgaver"><a class="fas fa-list-check" href="./Assignments.html"> OPGAVER</a></button>
+    <button class="button-CV"><a class="fas fa-file" href="./Resume.html"> CV</a></button>
+    <button class="button-timeline"><a class="fas fa-timeline" href="./progress.html"> TIMELINE</a></button>
+    <button class="button-beviser"><a class="fas fa-scroll" href="./beviser.html"> BEVISER</a></button>
 </div>
 
 
+      <div class="content" >
+          <div class="infobox">
+                  <div class="column">
+                      <img class="photo" src="https://user-images.githubusercontent.com/98741878/269182667-7a7606ed-88eb-4157-98c0-42b913cee4d4.jpg" alt="Folkeskole bevis" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                    <img class="photo" src="https://user-images.githubusercontent.com/98741878/269271140-699bea26-1e7d-4fb0-aa1b-d0a7ed8096ba.jpg" alt="GF2 Afgangs bevis" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                    <img class="photo" src="https://user-images.githubusercontent.com/98741878/269182689-24c56266-de91-4a09-b051-b27818a75ec0.jpg" alt="Hovedforløb 1 afgangs bevis" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                      <img class="photo" src="https://user-images.githubusercontent.com/98741878/269271520-99f074af-8a70-4474-9dc2-6220d19f5ae0.jpg" alt="Hovedforløb 2 afgangs bevis" onclick="myFunction(this);">
+                  </div>
+                </div>
+              
+                <hr>
+                
+                <!-- The expanding image container -->
+                <div class="container">
+                  <!-- Close the image -->
+                  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+                  <!-- Expanded image -->
+                  <img id="expandedImg" style="width: 90%">
+                
+                  <!-- Image text -->
+                  <div id="imgtext"></div>
+                </div>
+                <hr>
+          </div>     
 
 
-<script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-</script>
-<script>
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
-</script>
-<script>
-function myFunction(imgs) {
-    // Get the expanded image
-    var expandImg = document.getElementById("expandedImg");
-    // Get the image text
-    var imgText = document.getElementById("imgtext");
-    // Use the same src in the expanded image as the image being clicked on from the grid
-    expandImg.src = imgs.src;
-    // Use the value of the alt attribute of the clickable image as text inside the expanded image
-    imgText.innerHTML = imgs.alt;
-    // Show the container element (hidden with CSS)
-    expandImg.parentElement.style.display = "block";
-  }
-</script>
+
+      <script>
+        function myFunction(imgs) {
+            // Get the expanded image
+            var expandImg = document.getElementById("expandedImg");
+            // Get the image text
+            var imgText = document.getElementById("imgtext");
+            // Use the same src in the expanded image as the image being clicked on from the grid
+            expandImg.src = imgs.src;
+            // Use the value of the alt attribute of the clickable image as text inside the expanded image
+            imgText.innerHTML = imgs.alt;
+            // Show the container element (hidden with CSS)
+            expandImg.parentElement.style.display = "block";
+          }
+        </script>
+
 </body>
 </html>
