@@ -15,12 +15,11 @@
 body {
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background-image: url('https://user-images.githubusercontent.com/98741878/270642996-6f2c1a4d-4a23-467d-9943-51fe1f366f43.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Optionally, you can fix the background in place */
   background-position-y: -290px;
   z-index: -2;
 }
@@ -29,16 +28,21 @@ body {
 /* Container for flexboxes */
 .row {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 /* Create three equal columns */
-.column-LEFT, .column-RIGHT {
-  flex: 1;
+.column-LEFT {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 100% auto;
   background-color: #ffffffdb;
+}
+.column-RIGHT{
   display: block;
   height: 100%;
+  width: 100%;
+  background-color: #ffffffdb;
 }
 
 /*-----------------NAVBAR---------------------------*/
@@ -60,7 +64,7 @@ body {
     width: 200px;
     outline: none;
     margin-top: 0px;
-    border-top: 2px solid #dddddd;
+    border-top: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
     border-right: 2px solid #dddddd;
     border-left: 3px solid #dddddd;
@@ -69,7 +73,7 @@ body {
 .button-opgaver, .button-CV, .button-timeline {
     height: 150px;
     width: 200px;
-    border-top: 2px solid #dddddd;
+    border-top: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
     border-right: 2px solid #dddddd;
     border-left: 2px solid #dddddd;
@@ -80,7 +84,7 @@ body {
     width: 200px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-top: 2px solid #dddddd;
+    border-top: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
     border-right: 3px solid #dddddd;
     border-left: 2px solid #dddddd;
@@ -95,8 +99,8 @@ a:link {
     padding-top: 35%;
 }
 a:hover{
-    color: rgb(39, 2, 141);;
-    border-bottom: 2px solid rgb(39, 2, 141);
+    color: rgb(39, 2, 141, 0.39);;
+    border-bottom: 2px solid rgba(39, 2, 141, 0.39);
 }
 .material-icons {
     display: inline-block;
@@ -108,21 +112,18 @@ a:hover{
   display: block;
   height: 150px;
   width: 150px;
+  border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #dddddd;
 }
 /*--------------------------------------------*/
-/*----------------MEDIA SCREENS----------------------------*/
-@media (max-width: 600px) {
-  .column .button-group{
-    flex-basis: 100%;
-  }
-}
-/*--------------------------------------------*/
+
 /*----------------COLUMN CONTENT-------------------*/
 
 .card-myName{
   display: block;
     font-size: max(0.75vw);
-    border: 2px solid rgb(39, 2, 141);
+    border: 2px solid rgb(39, 2, 141, 0.39);
     font-family: 'Alice';
     align-content: center;
     text-align: center;
@@ -130,25 +131,218 @@ a:hover{
     text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5);
     width: 20vw ;
     letter-spacing: 0.2ch;
-    margin-top: 20px;
-    margin-left: 200px;
-    margin-bottom: 150px;
+    margin-top: 4%;
+    margin-bottom: 2% ;
+    margin-left: 35%;
 }
-.card-INFO{
-  display: block;
+.card-INFO {
+    font-size: max(0.85vw); /* Adjust the minimum font size as needed */
+    border: 2px solid rgb(39, 2, 141, 0.39);
+    font-family: 'Alice';
+    align-content: center;
+    text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5);
+    margin-top: 1%;
+    margin-bottom: 2% ;
+    margin-left: 2%;
+    margin-right: 35%;
+    padding-left: 1%;
+    padding-right: 1%;
+    line-height: 0.80;
+    width: 90%;
+    max-width: 100%;
+}
+.Erfaring{
+    letter-spacing: 0.5ch;
     font-size: max(0.75vw);
-    border: 2px solid rgb(39, 2, 141);
+    margin-top: 20px;
+    font-family: 'Alice';
+    align-content: center;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5);
+    margin-bottom: 20px;
+    line-height: 0.14vh;
+}
+
+.Skole{
+    letter-spacing: 0.5ch;
+    font-size: max(0.75vw);
+    margin-top:20px;
+    font-family: 'Alice';
+    align-content: center;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5);
+    margin-bottom: 20px;
+    line-height: 0.14vh;
+}
+.overskift{
+    font-size: max(1.7vw);
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+
+
+
+/*----------------MEDIA SCREENS----------------------------*/
+
+@media (max-width: 913px) {
+  .column-LEFT {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100% auto;
+  background-color: #ffffffdb;
+}
+.column-RIGHT{
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffffdb;
+}
+  .card-myName{
+  display: block;
+    font-size: max(1.75vw);
     font-family: 'Alice';
     align-content: center;
     text-align: center;
-    line-height: 1.5vh;
+    line-height: 3vh;
     text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5);
-    width: 55vw ;
+    min-width: 45vw;
     letter-spacing: 0.2ch;
-    margin-top: 20px;
-    margin-bottom: 150px;
-    margin-right: 200px;
+    margin-top: 10%;
+    margin-bottom: 2% ;
+    margin-left: auto!important;
 }
+.card-INFO {
+    font-size: max(1.75vw); /* Adjust the minimum font size as needed */
+    border: 2px solid rgb(39, 2, 141, 0.39);
+    font-family: 'Alice';
+    align-content: center;
+    text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5);
+    margin-top: 10%;
+    margin-left: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    line-height: 1;
+    max-width: 100%;
+}
+.Erfaring{
+    letter-spacing: 0.5ch;
+    font-size: max(1.75vw);
+    margin-top: 20px;
+    font-family: 'Alice';
+    align-content: center;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5);
+    margin-bottom: 20px;
+    line-height: 1vh;
+}
+
+.Skole{
+    letter-spacing: 0.5ch;
+    font-size: max(1.75vw);
+    margin-top:20px;
+    font-family: 'Alice';
+    align-content: center;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5);
+    margin-bottom: 20px;
+    line-height: 1vh;
+}
+.overskift{
+    font-size: max(3.75vw);
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    margin: 20px;
+}}
+@media (max-width: 913px) {
+  .button-group {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+.button-profil {
+    height: 75px;
+    width: 150px;
+    outline: none;
+    margin-top: 0px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #dddddd;
+    border-left: 1.5px solid #dddddd;
+    background-color: #ffffff;
+}
+.button-opgaver, .button-CV, .button-timeline {
+  height: 75px;
+    width: 150px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+.button-beviser {
+  height: 75px;
+    width: 150px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1.5px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+a:link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none !important;
+    padding-top: 35%;
+}
+a:hover{
+    color: rgb(39, 2, 141, 0.39);;
+    border-bottom: 2px solid rgba(39, 2, 141, 0.39);
+}
+.material-icons {
+    display: inline-block;
+}
+.fas{
+    font-size: 10px;
+}
+.PB{
+  display: block;
+  height: 75px;
+  width: 75px;
+  border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #dddddd;
+}}
+@media (max-width: 913px) {
+  #body {
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+}
+/*--------------------------------------------*/
+
+
+
 </style>
 
 </head>
@@ -168,7 +362,7 @@ a:hover{
       <div class="card-myName">
         <div class="Kompetencer"><!--FIRST COLUMN LEFT SIDE-->
           <p class="overskift"><b> KOMPETENCER </b></h1>
-          <hr style="border-color:rgb(39, 2, 141)">
+          <hr style="border-color:rgb(39, 2, 141, 0.39)">
           <h4> GITHUB - ADVANCED BEGINNER</h4>
           <hr style="border-color:rgba(80, 80, 80, 0.452); width: 80%;">
           <h4> HTML - ADVANCED BEGINNER</h4>
@@ -199,38 +393,53 @@ a:hover{
     </div>
     <div class="column-RIGHT">
       <div class="card-INFO">
-        <div class="Kompetencer"><!--FIRST COLUMN LEFT SIDE-->
-          <p class="overskift"><b> KOMPETENCER </b></h1>
-          <hr style="border-color:rgb(39, 2, 141)">
-          <h4> GITHUB - ADVANCED BEGINNER</h4>
-          <hr style="border-color:rgba(80, 80, 80, 0.452); width: 80%;">
-          <h4> HTML - ADVANCED BEGINNER</h4>
-          <hr style="border-color:rgba(80, 80, 80, 0.452); width: 80%;">
-          <h4> CSS - ADVANCED BEGINNER</h4>
-          <hr style="border-color:rgba(80, 80, 80, 0.452); width: 80%;">
-          <h4> C# - ADVANCED BEGINNER</h4>
-          <hr style="border-color:rgba(80, 80, 80, 0.452); width: 80%;">
-          <h4> CRUD - ADVANCED BEGINNER</h4>
-          <hr style="border-color:rgba(80, 80, 80, 0.452); width: 80%;">
-          <h4> OOP - NOVICE</h4>
-          <hr style="border-color:rgba(80, 80, 80, 0.452); width: 80%;">
-          <h4> OS STYRING - NOVICE</h4>
-          <hr style="border-color:rgba(80, 80, 80, 0.452); width: 80%;">
-          <h4> UML KLASSEDIAGRAMMER - NOVICE</h4>
-          <hr style="border-color:rgba(80, 80, 80, 0.452); width: 80%;">
-          <h4> CASE DIAGRAMMER - NOVICE</h4>
-          <hr style="border-color:rgba(80, 80, 80, 0.452); width: 80%;">
-          <h4> MySQL - NOVICE</h4>
-          <hr style="border-color:rgba(80, 80, 80, 0.452); width: 80%;">
-          <h4> MSSQL - NOVICE</h4>
-          <hr style="border-color:rgba(80, 80, 80, 0.452); width: 80%;">
-          <h4> TILSLUTNING AF SERVER FRA VSC</h4>
-          <hr style="border-color:rgba(80, 80, 80, 0.452); width: 80%;">
-          <h4> CISCO CCNA 1</h4>
+          <p class="overskift"> Resume</h>
+            <hr style="border-color:rgb(39, 2, 141, 0.39)">
+            <p class="text"> Hej mit navn er Martin. </h6>
+                <p class="text"> Jeg går på skole-oplærings-centret i Ballerup som programmør hvor jeg er igang med Praktikforløb 3 og skal på hovedforløb 3 d. 15 januar 2024 </h6>
+                    <p class="text"> jeg har længe gået med ønsket om at være programmør og jeg venter spændt på der er nogen som vil have en ansvarsbevidst programmør Elev</h6>
+                        <p class="text"> Glæder mig til at høre fra jer. </h6>
+              <p> </p>
+            <hr style="border-color:rgb(39, 2, 141, 0.39)">
+              <p class="text"> Stilling </b>: Elevplads</h4>
+                <p class="text"> Som?</b> : Datateknikker m. speciale i programmering</h4>
+          <div class="Erfaring"><!--SECOND COLUMN RIGHT SIDE-->
+            <hr style="border-color:rgb(39, 2, 141, 0.39)">
+            <p class="overskift"> Erfaring </p>
+            <hr style="border-color:rgb(39, 2, 141, 0.39)">
+            <p class="text"><b> Sted: Torvets kiosk</b></h4>
+            <p class="text"> Titel: Salgsassistent</b></h4>
+                    <p class="text"> Dato: juni 2019 - oktober 2020</b></h4>
+            <hr style="border-color:rgb(39, 2, 141, 0.39)">
+            <p class="text"> Sted: Expressvikar</b></h4>
+                <p class="text"> Titel: Lagermedarbejder</b></h4>
+                    <p class="text"> Dato: Maj 2017 - Jan 2018 </h6>
+            <hr style="border-color:rgb(39, 2, 141, 0.39)">
+            <p class="text"> Sted: Netto</b></h4>
+                <p class="text"> Titel Kassemedarbejder </b></h4>
+                    <p class="text"> Dato: Aug 2015 - Mar 2016</h6>
+          </div>
+          <div class="Skole"><!--THIRD COLUMN RIGHT SIDE-->
+            <hr style="border-color:rgb(39, 2, 141, 0.39)">
+            <p class="overskift"><b> Skole </b></h1>
+            <hr style="border-color:rgb(39, 2, 141, 0.39)">
+            <p class="text"> Sted: TEC skole-oplærings-centret</b></h4>
+                <p class="text"> Titel: Data-teknikker m. speciale i programmering</b></h4>
+                    <p class="text"> Dato: Aug 2021 - 2026</h6>
+            <hr style="border-color:rgb(39, 2, 141, 0.39)">
+            <p class="text"> Sted: TEC</b></h4>
+                <p class="text"> Titel: Godsvognschauffør</b></h4>
+                    <p class="text"> Dato: Aug 2019 - Dec 2019 </h6>
+            <hr style="border-color:rgb(39, 2, 141, 0.39)">
+            <p class="text"> Sted: Hendriksholmskole</b></h4>
+                <p class="text"> Titel: Folkeskole</b></h4>
+                    <p class="text"> Dato: Aug 2006 - Juni 2015</h6>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
 
 </body>
