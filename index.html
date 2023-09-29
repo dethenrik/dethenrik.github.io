@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Parisienne">
 <script src="https://kit.fontawesome.com/319f0a6434.js" crossorigin="anonymous"></script>
 
 <style>
@@ -13,6 +14,7 @@
 }
 
 body {
+  font-family: 'Parisienne';
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
@@ -99,49 +101,44 @@ a:hover{
 /*----------------COLUMN CONTENT--------------*/
 
 .Box{
-  background-color: #ffffff8a;
+  background-color: #ffffffd8;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+    width: auto;
 }
 .Card{
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #ffffff;
-  border: 3px solid darkblue;
   border-radius: 24px;
-  max-width: 370px;
+  max-width: 940px;
   width: auto;
   padding: 25px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  margin: 10%;
-}
-.img_1{
-  display: flex;
-  align-items: center;
-  height: 25vh;
-  width: auto;
-  border-radius: 50%;
-  background-color: darkblue;
-  padding: 3px;
+  margin-bottom: 10%;
+  transition: 0.3s;
 }
 .Name{
   text-align: center;
-  font-family: 'alice';
-  font-size: 2vh;
+  font-family: 'Parisienne';
+  font-size: 5vh;
   font-weight: bolder;
-  margin-top: 50px;
+  text-shadow: 1px 1px 1px rgb(165, 165, 165), 0 0 0.1em rgb(121, 121, 121);
+  letter-spacing: 0.4vw;
 }
-.Work, .Forløb, .E-mail, .Tlf{
+.Work{
+  display: flex;
   text-decoration: none !important;
   text-align: center;
-  font-family: 'alice';
   padding-top: 0 !important;
   color: black;
+  font-family: 'Parisienne';
+  font-size: 2.5vh;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px rgb(165, 165, 165), 0 0 0.1em rgb(121, 121, 121);
+
 }
-
-
 /*--------------------------------------------*/
 
 /*----------------MEDIA SCREENS----------------------------*/
@@ -227,16 +224,12 @@ a:hover{
 }
 }
 /*-------------------------------------------*/
-
-
-
 </style>
-
 </head>
 <body>
 
 <div class="button-group">
-    <img class="PB"src="https://user-images.githubusercontent.com/98741878/270876721-ab1b31b5-2a5b-487a-97fd-ee23d404c20b.png" alt="PB">
+    <img class="PB"src="https://user-images.githubusercontent.com/98741878/270876721-ab1b31b5-2a5b-487a-97fd-ee23d404c20b.png" alt="PB" href="/index.html">
     <button class="button-profil"><a class="fas fa-person" href="./Info.html"> PROFILE</a></button>
     <button class="button-opgaver"><a class="fas fa-list-check" href="./Assignments.html"> OPGAVER</a></button>
     <button class="button-CV"><a class="fas fa-file" href="./Resume.html"> CV</a></button>
@@ -247,12 +240,8 @@ a:hover{
 
 <div class="Box">
   <div class="Card">
-    <img class="img_1" src="https://user-images.githubusercontent.com/98741878/270876721-ab1b31b5-2a5b-487a-97fd-ee23d404c20b.png"></img>
     <p class="Name">Martin Almand Berthelsen</p>
-    <p class="Work">DataTekniker m. speciale i programmering</p>
-    <p class="Forløb">Praktikforløb 3</p>
-    <a class="E-mail" href=" mailto:Almand1999@hotmail.com"> Almand1999@hotmail.com </a>
-    <p class="Tlf">+45 27 14 68 70</p>
+    <p class="Work">Datatekniker m. Speciale i programmering</p>
   </div>
 </div>
 
