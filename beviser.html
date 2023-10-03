@@ -100,17 +100,21 @@ a:active{
 /*--------------------------------------------*/
 
 /*----------------COLUMN CONTENT--------------*/
-
+.backgroundOpacity{
+  background-color: #f3101069;
+  height: 100%;
+  width: 100vw;
+}
 
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 13vw;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
   overflow-x: hidden;
+  margin: 2vw;
 }
 .content {
   margin-left: 200px;
@@ -136,6 +140,11 @@ a:active{
   text-shadow: 0.5px 0.5px 0.5px black;
   font-size: 20px;
   font-family: 'Alice' !important;
+
+}
+#expandedImg{
+  margin-top: 5%;
+  margin-left: 20%;
 
 }
 
@@ -258,11 +267,12 @@ a:hover{
     <button class="button-beviser"><a class="fas fa-scroll" href="./beviser.html"> BEVISER</a></button>
 </div>
 
-
+<div class="backgroundOpacity">
+</div>
 <div class="sidenav">
   <div class="column">
     <img class="photo" src="https://user-images.githubusercontent.com/98741878/269182667-7a7606ed-88eb-4157-98c0-42b913cee4d4.jpg" alt="Folkeskole bevis" onclick="myFunction(this);">
-  /div>
+  </div>
   <div class="column">
   <img class="photo" src="https://user-images.githubusercontent.com/98741878/269271140-699bea26-1e7d-4fb0-aa1b-d0a7ed8096ba.jpg" alt="GF2 Afgangs bevis" onclick="myFunction(this);">
   </div>
@@ -280,13 +290,12 @@ a:hover{
     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
     <!-- Expanded image -->
-    <img id="expandedImg" style="width: 90%">
+    <img id="expandedImg" style="width: 50%">
   
     <!-- Image text -->
     <div id="imgtext"></div>
   </div>
 </div>
-
       <script>
         function myFunction(imgs) {
             // Get the expanded image
