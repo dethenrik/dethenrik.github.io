@@ -22,6 +22,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -290px;
+  opacity: 0;
+  transition: opacity 2s;
 }
 /*--------------------------------------------------*/
 
@@ -227,7 +229,7 @@ a:hover{
 /*-------------------------------------------*/
 </style>
 </head>
-<body>
+<body onload="document.body.style.opacity='1'">
 
 <div class="button-group">
     <img class="PB"src="https://user-images.githubusercontent.com/98741878/270876721-ab1b31b5-2a5b-487a-97fd-ee23d404c20b.png" alt="PB" href="/index.html">
