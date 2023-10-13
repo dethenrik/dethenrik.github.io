@@ -13,4 +13,5 @@
     background-position-y: -290px;
     opacity: 0;
     transition: opacity 1.5s;
+    overflow: hidden;
   }
