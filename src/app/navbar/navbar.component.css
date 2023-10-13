@@ -1,0 +1,70 @@
+.button-group {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+.button-profil {
+    height: 150px;
+    width: 200px;
+    outline: none;
+    margin-top: 0px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #dddddd;
+    border-left: 3px solid #dddddd;
+    background-color: #ffffff;
+}
+.button-opgaver, .button-CV, .button-timeline {
+    height: 150px;
+    width: 200px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #dddddd;
+    border-left: 2px solid #dddddd;
+    background-color: #ffffff;
+}
+.button-beviser {
+    height: 150px;
+    width: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-right: 3px solid #dddddd;
+    border-left: 2px solid #dddddd;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+a:link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none !important;
+    padding-top: 35%;
+}
+a:hover{
+    color: rgba(248, 112, 0, 0.212);
+    border-bottom: 3px solid rgba(141, 2, 2, 0.644);
+}
+.material-icons {
+    display: inline-block;
+}
+.fas{
+    font-size: 20px;
+    color: rgba(141, 2, 2, 0.644);
+}
+.PB{
+  display: block;
+  height: 150px;
+  width: 150px;
+  border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #dddddd;
+}

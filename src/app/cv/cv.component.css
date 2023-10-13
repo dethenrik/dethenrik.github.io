@@ -1,0 +1,88 @@
+.row {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.795);
+    height: 100vh;
+  }
+  
+  /* Create three equal columns */
+  .column-LEFT {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 100% auto;
+    /*background-color: #ffffffdb;*/
+  }
+  .column-RIGHT{
+    display: block;
+    height: 100%;
+    width: 100%;
+    /*background-color: #ffffffdb;*/
+  
+  }
+.card-myName{
+    display: block;
+      font-size: max(0.75vw);
+      border: 2px solid rgba(141, 2, 2, 0.644);
+      font-family: 'Alice';
+      align-content: center;
+      line-height: 1.2vh;
+      width: 20vw ;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      margin-left: 35%;
+      font-weight: bold;
+  }
+  h4{
+    padding-left: 1.5vw;
+  }
+  .card-INFO {
+      font-size: max(0.85vw); /* Adjust the minimum font size as needed */
+      border: 2px solid rgba(141, 2, 2, 0.644);
+      font-family: 'Alice';
+      align-content: center;
+      margin-top: 5vh;
+      margin-left: 2%;
+      margin-right: 35%;
+  
+      letter-spacing: 0.05vw;
+      width: 90%;
+      max-width: 100%;
+      font-weight: bold;
+  }
+  .Erfaring{
+      letter-spacing: 0.25ch;
+      align-content: center;
+      line-height: 0.14vh;
+  }
+  
+  .Skole{
+      letter-spacing: 0.25ch;
+      align-content: center;
+      line-height: 0.14vh;
+  }
+  .overskift{
+      font-size: max(1.7vw);
+      align-content: center;
+      text-align: center;
+      margin: 10px;
+      font-weight: bold;
+      margin: 20px;
+  }
+  
+  
+  .img_link{
+    padding: 0 !important;
+    height: 150px;
+    width: auto;
+    max-width: 150px;
+  }
+  .hr{
+    border-color: rgba(141, 2, 2, 0.644);
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .text{
+    margin: 1.32vh;
+    padding-left: 1%;
+      padding-right: 1%;
+  }

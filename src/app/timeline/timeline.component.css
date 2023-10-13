@@ -1,0 +1,26 @@
+
+.Box{
+    background-color: #ffffff8a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 3px solid rgba(141, 2, 2, 0.644);
+    border-radius: 24px;
+    width: 100vw;
+    max-width: 90vw;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 13%;
+  }
+  .timeline{
+    padding: 10px;
+    border-color: rgba(223, 60, 60, 0.904);
+    border-style: inset;
+    width: 85vw;
+  }

@@ -1,0 +1,61 @@
+.backgroundOpacity{
+    background-color: #fdfdfda4;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 13vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    margin-left: 3vw;
+    margin-top: 1.5vw;
+  }
+  .content {
+    margin-left: 200px;
+    padding-left: 20px;
+  }
+  .photo{
+      max-width: 100%;
+      height: auto;
+      padding-top: 5%;
+      box-shadow: 1px 7px 11px 0px rgba(0, 0, 0, 0.1);
+  }
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: relative;
+    display: none;
+    margin-bottom: 11vh;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    text-align: center;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    text-shadow: 0.5px 0.5px 0.5px black;
+    font-size: 20px;
+    font-family: 'Alice' !important;
+  
+  }
+  #expandedImg{
+    margin-top: 5%;
+    margin-left: 25%;
+    box-shadow: 1px 0px 20px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    cursor: pointer;
+  
+  }

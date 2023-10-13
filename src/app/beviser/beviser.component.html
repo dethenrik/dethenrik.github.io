@@ -1,0 +1,44 @@
+<div class="backgroundOpacity">
+    <div class="sidenav">
+      <div class="column">
+        <img class="photo" src="https://user-images.githubusercontent.com/98741878/269182667-7a7606ed-88eb-4157-98c0-42b913cee4d4.jpg" alt="Folkeskole bevis" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+      <img class="photo" src="https://user-images.githubusercontent.com/98741878/269271140-699bea26-1e7d-4fb0-aa1b-d0a7ed8096ba.jpg" alt="GF2 Afgangs bevis" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+      <img class="photo" src="https://user-images.githubusercontent.com/98741878/269182689-24c56266-de91-4a09-b051-b27818a75ec0.jpg" alt="Hovedforløb 1 afgangs bevis" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img class="photo" src="https://user-images.githubusercontent.com/98741878/269271520-99f074af-8a70-4474-9dc2-6220d19f5ae0.jpg" alt="Hovedforløb 2 afgangs bevis" onclick="myFunction(this);">
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width: 50%">
+      
+        <!-- Image text -->
+        <div id="imgtext"></div>
+      </div>
+    </div>
+    </div>
+    
+          <script>
+            function myFunction(imgs) {
+                // Get the expanded image
+                var expandImg = document.getElementById("expandedImg");
+                // Get the image text
+                var imgText = document.getElementById("imgtext");
+                // Use the same src in the expanded image as the image being clicked on from the grid
+                expandImg.src = imgs.src;
+                // Use the value of the alt attribute of the clickable image as text inside the expanded image
+                imgText.innerHTML = imgs.alt;
+                // Show the container element (hidden with CSS)
+                expandImg.parentElement.style.display = "block";
+              }
+            </script>
