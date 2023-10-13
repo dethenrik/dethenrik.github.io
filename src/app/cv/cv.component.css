@@ -22,7 +22,7 @@
 .card-myName{
     display: block;
       font-size: max(0.75vw);
-      border: 2px solid rgba(141, 2, 2, 0.644);
+      border: 3px solid rgba(141, 2, 2, 0.644);
       font-family: 'Alice';
       align-content: center;
       line-height: 1.2vh;
@@ -37,17 +37,17 @@
   }
   .card-INFO {
       font-size: max(0.85vw); /* Adjust the minimum font size as needed */
-      border: 2px solid rgba(141, 2, 2, 0.644);
+      border: 3px solid rgba(141, 2, 2, 0.644);
       font-family: 'Alice';
       align-content: center;
       margin-top: 5vh;
       margin-left: 2%;
       margin-right: 35%;
-  
       letter-spacing: 0.05vw;
       width: 90%;
       max-width: 100%;
       font-weight: bold;
+      height: 80vh;
   }
   .Erfaring{
       letter-spacing: 0.25ch;
