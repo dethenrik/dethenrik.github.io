@@ -22,7 +22,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -290px;
-  opacity: 0;
+  opacity: 100;
   transition: opacity 1.5s;
 }
 /*--------------------------------------------------*/
@@ -110,6 +110,7 @@ a:hover{
   align-items: center;
   height: 100vh;
     width: auto;
+    transition: all 1s;
 }
 .Card{
   display: flex;
@@ -228,16 +229,30 @@ a:hover{
 }
 /*-------------------------------------------*/
 </style>
+<script>
+  function myFunction() {
+    const slidePages = document.querySelectorAll(".Box")
+    const translateAmount = 100;
+    let translate = 0;
+    slide = (direction) => {
+      direction === "next" ? translate -= translateAmount : translate += translateAmount;
+      
+      slidePages.forEach(
+        slidePages => (slidePages.style.transform = 'translateX(${translate}%)')
+      )
+    }
+  }
+  </script>
 </head>
-<body onload="document.body.style.opacity='1'">
+<body>
 
 <div class="button-group">
     <img class="PB"src="https://user-images.githubusercontent.com/98741878/270876721-ab1b31b5-2a5b-487a-97fd-ee23d404c20b.png" alt="PB" href="/index.html">
-    <button class="button-profil"><a class="fas fa-person" href="./Info.html"> PROFILE</a></button>
+    <button class="button-profil" onclick="slide('next')"><a class="fas fa-person" href="./Info.html"> PROFILE</a></button>
     <button class="button-opgaver"><a class="fas fa-list-check" href="./Assignments.html"> OPGAVER</a></button>
     <button class="button-CV"><a class="fas fa-file" href="./Resume.html"> CV</a></button>
     <button class="button-timeline"><a class="fas fa-timeline" href="./progress.html"> TIMELINE</a></button>
-    <button class="button-beviser"><a class="fas fa-scroll" href="./beviser.html"> BEVISER</a></button>
+    <button class="button-beviser" ><a class="fas fa-scroll" href="./beviser.html"> BEVISER</a></button>
 </div>
 
 
@@ -245,6 +260,7 @@ a:hover{
   <div class="Card">
     <p class="Name">Martin Almand Berthelsen</p>
     <p class="Work">Datatekniker m. Speciale i programmering</p>
+    <button type=”button” onclick=myFunction()>Try it</button>
   </div>
 </div>
 
