@@ -1,86 +1,137 @@
 .row {
+  overflow-y:scroll;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: rgba(255, 255, 255, 0.795);
     height: 100vh;
+    color: rgb(110, 2, 2);
   }
   
   /* Create three equal columns */
-  .column-LEFT {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    height: 100% auto;
-    /*background-color: #ffffffdb;*/
-  }
-  .column-RIGHT{
-    display: block;
-    height: 100%;
-    width: 100%;
-    /*background-color: #ffffffdb;*/
-  
-  }
-.card-myName{
-    display: block;
-      font-size: max(0.75vw);
-      border: 3px solid rgba(141, 2, 2, 0.644);
-      font-family: 'Alice';
-      align-content: center;
-      line-height: 1.2vh;
-      width: 20vw ;
-      margin-top: 5vh;
-      margin-bottom: 5vh;
-      margin-left: 35%;
-      font-weight: bold;
-  }
-  h4{
-    padding-left: 1.5vw;
-  }
-  .card-INFO {
-      font-size: max(0.85vw); /* Adjust the minimum font size as needed */
-      border: 3px solid rgba(141, 2, 2, 0.644);
-      font-family: 'Alice';
-      align-content: center;
-      margin-top: 5vh;
-      margin-left: 2%;
-      margin-right: 35%;
-      letter-spacing: 0.05vw;
-      width: 90%;
-      max-width: 100%;
-      font-weight: bold;
-  }
-  .Erfaring{
-      letter-spacing: 0.25ch;
-      align-content: center;
-      line-height: 0.14vh;
-  }
-  
-  .Skole{
-      letter-spacing: 0.25ch;
-      align-content: center;
-      line-height: 0.14vh;
-  }
-  .overskift{
-      font-size: max(1.7vw);
-      align-content: center;
-      text-align: center;
-      font-weight: bold;
-      margin: 27px;
-  }
-  
-  
-  .img_link{
-    padding: 0 !important;
-    height: 150px;
-    width: auto;
-    max-width: 150px;
-  }
-  .hr{
-    border-color: rgba(141, 2, 2, 0.644);
-    margin: 0px !important;
-    padding: 0px !important;
-  }
-  .text{
-    margin: 1.32vh;
-    padding-left: 1%;
-      padding-right: 1%;
-  }
+.container{
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 25vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  height:fit-content;
+  width: 75vw;
+  background-color: beige;
+  border: 3px solid rgb(173, 173, 172);
+  box-shadow: 0px 00px 20px 10px rgb(173, 173, 172);
+}
+#name{
+  font-family: 'Parisienne';
+  font-size: 5vh;
+  font-weight: 900;
+  padding-top: 10vh;
+  padding-bottom: 2vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  margin: 0;
+}
+#work{
+  font-family: 'Parisienne';
+  font-size: 3vh;
+  font-weight: 900;
+  padding-top: 0vh;
+  padding-bottom: 7vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  margin: 0;
+  border-bottom: 2px solid rgb(173, 173, 172);
+}
+.thebox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-bottom: 2px solid rgb(173, 173, 172);
+  margin: 0;
+}
+#email{
+  color: rgb(110, 2, 2);
+  text-decoration: none;
+  font-family: 'times new roman';
+  margin: 0;
+  padding:0;
+}
+#lokation{
+  font-family: 'times new roman';
+}
+#telefon{
+  font-family: 'times new roman';
+}
+#github{
+  color: rgb(110, 2, 2);
+  text-decoration: none;
+  font-family: 'times new roman';
+}
+
+.overskrift{
+  font-family: 'times new roman';
+  font-size: 2.5vh;
+  font-weight:bolder;
+  letter-spacing: 0.2vh;
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+.resume{
+  font-family: 'times new roman';
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+.uddannelse{
+  font-family: 'times new roman';
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+.arbejde{
+  font-family: 'times new roman';
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+.sprog{
+  font-family: 'times new roman';
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+
+.thesecondbox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.table1{
+  margin: 5vh;
+}
+.table2{
+  margin: 5vh;
+}
+.fish3{
+  margin: 5vh;
+}
+.kompetencer{
+  font-family: 'times new roman';
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
