@@ -89,6 +89,7 @@
   margin-bottom: 2vh;
   margin-left: 10vh;
   margin-right: 10vh;
+  font-size: 1.5vh;
 }
 .uddannelse{
   font-family: 'times new roman';
@@ -96,6 +97,7 @@
   margin-bottom: 2vh;
   margin-left: 10vh;
   margin-right: 10vh;
+  font-size: 1.5vh;
 }
 .arbejde{
   font-family: 'times new roman';
@@ -103,6 +105,7 @@
   margin-bottom: 2vh;
   margin-left: 10vh;
   margin-right: 10vh;
+  font-size: 1.5vh;
 }
 .sprog{
   font-family: 'times new roman';
@@ -110,6 +113,7 @@
   margin-bottom: 2vh;
   margin-left: 10vh;
   margin-right: 10vh;
+  font-size: 1.5vh;
 }
 
 
@@ -134,4 +138,5 @@
   margin-bottom: 2vh;
   margin-left: 2vh;
   margin-right: 2vh;
+  font-size: 1.5vh;
 }
