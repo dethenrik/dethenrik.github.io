@@ -47,7 +47,6 @@
       width: 90%;
       max-width: 100%;
       font-weight: bold;
-      height: 80vh;
   }
   .Erfaring{
       letter-spacing: 0.25ch;
@@ -64,9 +63,8 @@
       font-size: max(1.7vw);
       align-content: center;
       text-align: center;
-      margin: 10px;
       font-weight: bold;
-      margin: 20px;
+      margin: 25px;
   }
   
   
