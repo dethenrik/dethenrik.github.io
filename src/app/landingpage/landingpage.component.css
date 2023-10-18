@@ -1,5 +1,6 @@
 .Box{
-    background-color: #ffffffd8;
+  box-shadow: inset 0px 0px 20px 10px black;
+  background-color: #ffffffd8;
     display: flex;
     justify-content: center;
     align-items: center;

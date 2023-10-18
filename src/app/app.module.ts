@@ -11,6 +11,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { BeviserComponent } from './beviser/beviser.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.component';
+import { ShowDirective } from './show.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.componen
     TimelineComponent,
     BeviserComponent,
     LandingpageComponent,
-    HamburgerMenuComponent
+    HamburgerMenuComponent,
+    ShowDirective
   ],
   imports: [
     BrowserModule,
