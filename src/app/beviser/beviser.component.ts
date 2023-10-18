@@ -12,7 +12,7 @@ export class BeviserComponent {
     var src:any = this.el.nativeElement.src;
     var prev:any = document.getElementById("preview");
     prev.src = src;
-    var imageSlide = document.getElementsByClassName("img-slide");
+    var imageSlide = document.getElementsByClassName("img-Slide");
     for(let i=0; i<imageSlide.length; i++){
       imageSlide[i].classList.remove("active");
     }
