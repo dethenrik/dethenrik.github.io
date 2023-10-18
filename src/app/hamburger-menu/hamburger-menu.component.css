@@ -48,6 +48,7 @@
     margin-bottom: 2vh;
     border: none;
     border-radius: 10px;
+    z-index: 1;
   }
   .openbtn:hover {
     background-color: #444;
