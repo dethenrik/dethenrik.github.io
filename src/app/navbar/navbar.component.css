@@ -68,3 +68,11 @@ a:hover{
     border-bottom: 2px solid #ffffff;
     border-left: 2px solid #dddddd;
 }
+
+
+@media screen and (max-width: 940px) {
+    .button-group {
+        display: none;
+
+    }
+  }

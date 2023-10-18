@@ -10,6 +10,7 @@ import { CVComponent } from './cv/cv.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { BeviserComponent } from './beviser/beviser.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
+import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
     CVComponent,
     TimelineComponent,
     BeviserComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    HamburgerMenuComponent
   ],
   imports: [
     BrowserModule,

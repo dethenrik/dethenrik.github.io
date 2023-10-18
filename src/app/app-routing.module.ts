@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BeviserComponent } from './beviser/beviser.component';
 import { CVComponent } from './cv/cv.component';
+import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { OpgaverComponent } from './opgaver/opgaver.component';
 import { ProfilComponent } from './profil/profil.component';
@@ -13,7 +14,8 @@ const routes: Routes = [/* her skal alle dine sider indsættes så programmet ka
   { path:'profil',  component: ProfilComponent},
   { path:'opgaver',  component: OpgaverComponent},
   { path:'timeline',  component: TimelineComponent},
-  { path:'beviser',  component: BeviserComponent}
+  { path:'beviser',  component: BeviserComponent},
+  { path:'hamburgermenu',  component: HamburgerMenuComponent}
 ];
 
 @NgModule({
