@@ -1,0 +1,40 @@
+#canvas1{
+    border: 5px solid black ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%) ;
+    width:600px;
+    height: 600px;
+}
+#button{
+    margin: 20vh;
+    height: 8vh;
+    width: 5vw;
+    height: min 8vh;
+    min-width: 92px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+/*MOBIL SCREENS*/
+@media screen and (max-width: 940px) {
+    #canvas1 {
+        border: 5px solid black ;
+        position: absolute;
+        top: 25;
+        left:25;
+        transform:translate(-50%, -50%) ;
+        width:600px;
+        height: 600px;
+        margin: 20vh;
+    }
+  }

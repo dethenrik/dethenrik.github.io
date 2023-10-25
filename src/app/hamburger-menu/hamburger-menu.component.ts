@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-declare function openNav():void; {
-}
+declare function openNav():void; {}
 @Component({
   selector: 'app-hamburger-menu',
   templateUrl: './hamburger-menu.component.html',
