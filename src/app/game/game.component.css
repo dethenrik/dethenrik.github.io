@@ -8,11 +8,19 @@
     height: 600px;
 }
 #button{
-    margin: 20vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
     height: 8vh;
     width: 5vw;
     height: min 8vh;
     min-width: 92px;
+}
+.message{
+    display: flex;
+    justify-content: center;
+    padding: 10vh;
+    font-size: 3vh;
 }
 .container{
     display: flex;

@@ -1,5 +1,4 @@
-
-document.addEventListener('click', function () {
+document.addEventListener('click', function Game() {
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
     
@@ -9,15 +8,25 @@ document.addEventListener('click', function () {
     const playerImage = new Image();
     playerImage.src = 'assets/images/shadow_dog.png'; // Load the image
 
-    // Set up the onload event handler for the image
-    playerImage.onload = function() {
-        let x = 0;
-        function animate() {
-            ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-            ctx.drawImage(playerImage, x, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-            x++;
-            requestAnimationFrame(animate);
+    const spriteWidth = 575;
+    const spriteHeight = 523;
+
+    let frameX = 0;
+    let frameY = 0;
+
+    let gameFrame = 0;
+
+    const staggerFrames = 2;
+
+    function animate() {
+        ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+        ctx.drawImage(playerImage, frameX * spriteWidth, frameY * spriteHeight, spriteWidth, spriteHeight, 0, 0, spriteWidth, spriteHeight);
+        if(gameFrame % staggerFrames == 0){
+        if(frameX < 6)frameX++;
+        else frameX = 0;
         }
-        animate(); // Start the animation once the image is loaded
-    };
+        requestAnimationFrame(animate);
+        gameFrame++;
+    }
+    animate();
 });

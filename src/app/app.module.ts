@@ -13,6 +13,7 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.component';
 import { ShowDirective } from './show.directive';
 import { GameComponent } from './game/game.component';
+import { AnimationComponent } from './animation/animation.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { GameComponent } from './game/game.component';
     HamburgerMenuComponent,
     ShowDirective,
     GameComponent,
+    AnimationComponent,
   ],
   imports: [
     BrowserModule,

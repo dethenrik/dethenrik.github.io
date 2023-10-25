@@ -28,7 +28,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/openNav.js", "/src/assets/game.js"]
+              "/src/assets/openNav.js", "/src/assets/game.js"]
           },
           "configurations": {
             "production": {
