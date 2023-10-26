@@ -62,11 +62,11 @@
         display: flex;
         top: 0%;
         left: 50%;
+        font-size: 2vh;
         margin-left: 1vh;
         margin-right: 1vh;
-        margin-top: 10vh;
+        margin-top: 7vh;
         margin-bottom: 80vh;
-        font-size: 2vh;
         padding-top: 13vw;
         padding-bottom: 90vw;
         padding-right: 5vw;
