@@ -47,21 +47,29 @@
     .controls, select, option, label{
         display: flex;
         top: 0%;
-        left: 25vh;
-        margin: 1vh;
+        left: 50%;
+        margin-left: 1vh;
+        margin-right: 1vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
         align-items: center;
-        flex-wrap: wrap;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        flex-direction: row;
     }
     .message{
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 15vh;
-        width: 65vw;
+        display: flex;
+        top: 0%;
+        left: 50%;
+        margin-left: 1vh;
+        margin-right: 1vh;
+        margin-top: 10vh;
+        margin-bottom: 80vh;
         font-size: 2vh;
         padding-top: 13vw;
-        padding-bottom: 10vw;
-        padding-right: 4vw;
-        padding-left: 10vw;
+        padding-bottom: 90vw;
+        padding-right: 5vw;
+        padding-left: 5vw;
     }
   }
