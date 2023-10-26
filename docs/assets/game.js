@@ -1,13 +1,9 @@
-document.addEventListener('DOMContentLoaded', function Game() {
-
+document.addEventListener('DOMContentLoaded', function () {
     let playerState = 'idle';
     const dropdown = document.getElementById('animations');
     dropdown.addEventListener('change', function(e){
         playerState = e.target.value;
     });
-
-
-
 
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
@@ -20,11 +16,7 @@ document.addEventListener('DOMContentLoaded', function Game() {
 
     const spriteWidth = 575;
     const spriteHeight = 523;
-
-
-    //let frameX = 0;
-    //let frameY = 1;     // this is the absolute position of the sprite
-
+    
     let gameFrame = 0;
 
     const staggerFrames = 5; // this is the speed of your characters animation
@@ -95,4 +87,11 @@ document.addEventListener('DOMContentLoaded', function Game() {
         requestAnimationFrame(animate);
     }
     animate();
+    document.addEventListener('visibilitychange', function () {
+        if (document.hidden) {
+            animationPaused = true;
+        } else {
+            animationPaused = false;
+        }
+    });
 });
