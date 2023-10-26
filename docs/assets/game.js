@@ -12,21 +12,43 @@ document.addEventListener('click', function Game() {
     const spriteHeight = 523;
 
     let frameX = 0;
-    let frameY = 0;
+    let frameY = 1;     // this is the absolute position of the sprite
 
     let gameFrame = 0;
 
-    const staggerFrames = 2;
+    const staggerFrames = 5; // this is the speed of your characters animation
+
+    const spriteAnimations = [];
+    const animationStates = [
+        {
+            name: 'idle',
+            frames: '7',
+        },
+        {
+            name: 'jump',
+            frames: '7',
+        }
+    ];
+    animationStates.forEach((state, index) => {
+        let frames = {
+            loc: [],
+        }
+        for (let j = 0; j < state.frames; j++){
+            let positionX = j * spriteWidth;
+            let positionY = index * spriteHeight;
+            frames.loc.push({x: positionX, y: positionY});
+        }
+        spriteAnimations[state.name] = frames;
+    });
+    console.log(spriteAnimations);
 
     function animate() {
         ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-        ctx.drawImage(playerImage, frameX * spriteWidth, frameY * spriteHeight, spriteWidth, spriteHeight, 0, 0, spriteWidth, spriteHeight);
-        if(gameFrame % staggerFrames == 0){
-        if(frameX < 6)frameX++;
-        else frameX = 0;
-        }
-        requestAnimationFrame(animate);
+        let position = Math.floor(gameFrame/staggerFrames) % spriteAnimations["idle"].loc;//this is the relative position of the sprite
+        frameX = spriteWidth * position;
+        ctx.drawImage(playerImage, frameX, frameY * spriteHeight, spriteWidth, spriteHeight, 0, 0, spriteWidth, spriteHeight);
         gameFrame++;
+        requestAnimationFrame(animate);
     }
     animate();
 });
