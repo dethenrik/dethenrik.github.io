@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function Game() {
+document.addEventListener('change', function Game() {
 
     let playerState = 'idle';
     const dropdown = document.getElementById('animations');

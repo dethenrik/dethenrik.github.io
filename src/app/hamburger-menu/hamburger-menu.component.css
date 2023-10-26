@@ -66,8 +66,9 @@
 
   @media screen and (max-width: 940px) {
     .openbtn {
-      bottom: 0%;
-
+      position: absolute;
+      bottom: 0;
+      margin: 0;
     }
   }
   
