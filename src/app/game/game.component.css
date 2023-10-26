@@ -37,13 +37,31 @@
 /*MOBIL SCREENS*/
 @media screen and (max-width: 940px) {
     #canvas1 {
-        border: 5px solid black ;
         position: absolute;
         top: 25;
         left:25;
         transform:translate(-50%, -50%) ;
-        width:600px;
-        height: 600px;
-        margin: 20vh;
+        width: 70vw;
+        height: 50vh;
+    }
+    .controls, select, option{
+        display: flex;
+        top: 0%;
+        left: 18vh;
+        margin: 1vh;
+        align-items: center;
+        flex-wrap: wrap
+    }
+    .message{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 15vh;
+        width: 65vw;
+        font-size: 2vh;
+        padding-top: 4vw;
+        padding-bottom: 10vw;
+        padding-right: 0vw;
+        padding-left: 10vw;
     }
   }
