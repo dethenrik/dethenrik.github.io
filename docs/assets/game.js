@@ -1,4 +1,4 @@
-document.addEventListener('click', function Game() {
+document.addEventListener('DOMContentLoaded', function Game() {
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
     
@@ -10,9 +10,9 @@ document.addEventListener('click', function Game() {
 
     const spriteWidth = 575;
     const spriteHeight = 523;
-
-    let frameX = 0;
-    let frameY = 1;     // this is the absolute position of the sprite
+    
+    //let frameX = 0;
+    //let frameY = 1;     // this is the absolute position of the sprite
 
     let gameFrame = 0;
 
@@ -44,8 +44,9 @@ document.addEventListener('click', function Game() {
 
     function animate() {
         ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-        let position = Math.floor(gameFrame/staggerFrames) % 6;//this is the relative position of the sprite
-        frameX = spriteWidth * position;
+        let position = Math.floor(gameFrame/staggerFrames) % spriteAnimations['idle'].loc.length;//this is the relative position of the sprite
+        let frameX = spriteWidth * position;
+        let frameY = spriteAnimations['idle'].loc[position].y;
         ctx.drawImage(playerImage, frameX, frameY * spriteHeight, spriteWidth, spriteHeight, 0, 0, spriteWidth, spriteHeight);
         gameFrame++;
         requestAnimationFrame(animate);
