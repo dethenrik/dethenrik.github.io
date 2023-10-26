@@ -57,6 +57,7 @@
         flex-wrap: nowrap;
         align-content: flex-start;
         flex-direction: row;
+        z-index: -1;
     }
     .message{
         display: flex;
