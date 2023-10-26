@@ -5,7 +5,6 @@
     width: 100vw;
   }
   .Box{
-  box-shadow: inset 0px 0px 20px 10px black;
   display: flex;
     justify-content: center;
     align-items: center;
