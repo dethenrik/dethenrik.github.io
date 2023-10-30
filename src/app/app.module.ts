@@ -12,8 +12,6 @@ import { BeviserComponent } from './beviser/beviser.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.component';
 import { ShowDirective } from './show.directive';
-import { GameComponent } from './game/game.component';
-import { AnimationComponent } from './animation/animation.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +25,6 @@ import { AnimationComponent } from './animation/animation.component';
     LandingpageComponent,
     HamburgerMenuComponent,
     ShowDirective,
-    GameComponent,
-    AnimationComponent,
   ],
   imports: [
     BrowserModule,
