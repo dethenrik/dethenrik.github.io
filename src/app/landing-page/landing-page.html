@@ -1,0 +1,128 @@
+<div class="landing-page-shell">
+    <header class="site-header">
+        <button
+            class="brand"
+            type="button"
+            aria-label="Go to the home page"
+            (click)="scrollToSection(0)"
+        >
+            <img
+                src="/MB LOGO.png"
+                alt="MB logo"
+                width="52"
+                height="32"
+            >
+        </button>
+
+        <nav
+            class="top-navigation"
+            aria-label="Main navigation"
+        >
+            @for (
+                item of navigationItems;
+                track item.sectionIndex
+            ) {
+                <button
+                    type="button"
+                    [class.active]="
+                        activeSection() === item.sectionIndex
+                    "
+                    [attr.aria-current]="
+                        activeSection() === item.sectionIndex
+                            ? 'page'
+                            : null
+                    "
+                    (click)="scrollToSection(item.sectionIndex)"
+                >
+                    {{ item.label }}
+                </button>
+            }
+        </nav>
+    </header>
+
+    <div
+        #scrollContainer
+        class="scroll-container"
+        (wheel)="onWheel($event)"
+        (scroll)="onScroll()"
+    >
+        <div
+            class="continuous-background"
+            aria-hidden="true"
+        ></div>
+
+        <section
+            class="scroll-section"
+            id="profile"
+            data-scroll-section
+            aria-label="Home"
+        >
+            <app-profile
+                (pageRequested)="scrollToSection($event)"
+            ></app-profile>
+        </section>
+
+        <section
+            class="scroll-section"
+            id="projects"
+            data-scroll-section
+            aria-label="Projects"
+        >
+            <app-projects></app-projects>
+        </section>
+
+        <section
+            class="scroll-section"
+            id="experience-education"
+            data-scroll-section
+            aria-label="Experience and education"
+        >
+            <app-experience-education>
+            </app-experience-education>
+        </section>
+
+        <section
+            class="scroll-section"
+            id="games"
+            data-scroll-section
+            aria-label="Games"
+        >
+            <app-games></app-games>
+        </section>
+
+        <section
+            class="scroll-section"
+            id="contactinformation"
+            data-scroll-section
+            aria-label="Contact information"
+        >
+            <app-contactinformation>
+            </app-contactinformation>
+        </section>
+    </div>
+
+    <nav
+        class="section-dots"
+        aria-label="Section navigation"
+    >
+        @for (
+            section of sectionDots;
+            track section.sectionIndex
+        ) {
+            <button
+                type="button"
+                [class.active]="
+                    activeSection() === section.sectionIndex
+                "
+                [attr.aria-label]="section.label"
+                [attr.aria-current]="
+                    activeSection() === section.sectionIndex
+                        ? 'page'
+                        : null
+                "
+                [attr.title]="section.label"
+                (click)="scrollToSection(section.sectionIndex)"
+            ></button>
+        }
+    </nav>
+</div>

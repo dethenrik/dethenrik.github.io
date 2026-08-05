@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3344" height="9410" viewBox="0 0 3344 9410" preserveAspectRatio="xMidYMid slice">
+    <defs>
+        <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#05080d"/>
+            <stop offset="0.28" stop-color="#070b12"/>
+            <stop offset="0.55" stop-color="#05090f"/>
+            <stop offset="0.78" stop-color="#080a0e"/>
+            <stop offset="1" stop-color="#05070b"/>
+        </linearGradient>
+        <radialGradient id="blueGlow">
+            <stop offset="0" stop-color="#1551c5" stop-opacity="0.72"/>
+            <stop offset="0.24" stop-color="#103d96" stop-opacity="0.46"/>
+            <stop offset="0.52" stop-color="#0b265c" stop-opacity="0.24"/>
+            <stop offset="0.78" stop-color="#07152d" stop-opacity="0.09"/>
+            <stop offset="1" stop-color="#05080d" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="orangeGlow">
+            <stop offset="0" stop-color="#c75519" stop-opacity="0.62"/>
+            <stop offset="0.25" stop-color="#833712" stop-opacity="0.42"/>
+            <stop offset="0.54" stop-color="#48200f" stop-opacity="0.22"/>
+            <stop offset="0.8" stop-color="#24130c" stop-opacity="0.08"/>
+            <stop offset="1" stop-color="#05080d" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="flowStroke" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#4d8de6" stop-opacity="0.16"/>
+            <stop offset="0.32" stop-color="#72aaff" stop-opacity="0.72"/>
+            <stop offset="0.56" stop-color="#a8b1c7" stop-opacity="0.44"/>
+            <stop offset="0.78" stop-color="#d17a42" stop-opacity="0.52"/>
+            <stop offset="1" stop-color="#e07329" stop-opacity="0.12"/>
+        </linearGradient>
+        <linearGradient id="verticalFlow" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#d67732" stop-opacity="0.38"/>
+            <stop offset="0.19" stop-color="#5c75a8" stop-opacity="0.3"/>
+            <stop offset="0.4" stop-color="#4283d9" stop-opacity="0.42"/>
+            <stop offset="0.62" stop-color="#9f694c" stop-opacity="0.3"/>
+            <stop offset="0.82" stop-color="#477cc0" stop-opacity="0.36"/>
+            <stop offset="1" stop-color="#d7692c" stop-opacity="0.32"/>
+        </linearGradient>
+        <pattern id="stars" width="240" height="240" patternUnits="userSpaceOnUse">
+            <circle cx="22" cy="38" r="2.1" fill="#8db8f3" opacity="0.28"/>
+            <circle cx="93" cy="74" r="1.3" fill="#d6e4f9" opacity="0.18"/>
+            <circle cx="181" cy="26" r="1.8" fill="#c36b34" opacity="0.22"/>
+            <circle cx="213" cy="137" r="1.1" fill="#9ab5da" opacity="0.2"/>
+            <circle cx="48" cy="189" r="1.6" fill="#cc7440" opacity="0.16"/>
+            <circle cx="139" cy="213" r="1" fill="#d4e4ff" opacity="0.22"/>
+        </pattern>
+        <pattern id="blueParticles" width="88" height="88" patternUnits="userSpaceOnUse">
+            <circle cx="8" cy="16" r="2" fill="#5f9cf2" opacity="0.46"/>
+            <circle cx="43" cy="7" r="1.2" fill="#8ab8f8" opacity="0.3"/>
+            <circle cx="72" cy="39" r="1.7" fill="#4f89d9" opacity="0.42"/>
+            <circle cx="25" cy="64" r="1.1" fill="#b1cef5" opacity="0.26"/>
+            <circle cx="61" cy="78" r="2.2" fill="#3677d0" opacity="0.34"/>
+        </pattern>
+        <pattern id="orangeParticles" width="94" height="94" patternUnits="userSpaceOnUse">
+            <circle cx="11" cy="23" r="1.8" fill="#d4773b" opacity="0.42"/>
+            <circle cx="49" cy="10" r="1.1" fill="#ed9b68" opacity="0.27"/>
+            <circle cx="78" cy="54" r="2" fill="#bd5925" opacity="0.4"/>
+            <circle cx="29" cy="75" r="1.2" fill="#f1b287" opacity="0.24"/>
+            <circle cx="66" cy="88" r="1.5" fill="#ce6833" opacity="0.34"/>
+        </pattern>
+        <pattern id="triMesh" width="180" height="156" patternUnits="userSpaceOnUse">
+            <path d="M0 156L90 0L180 156M0 156H180M45 78H135M90 0V156" fill="none" stroke="#6f8fb8" stroke-width="1.5" opacity="0.22"/>
+            <circle cx="90" cy="0" r="3" fill="#82a8d8" opacity="0.36"/>
+            <circle cx="0" cy="156" r="2.5" fill="#b26a43" opacity="0.3"/>
+            <circle cx="180" cy="156" r="2.5" fill="#b26a43" opacity="0.3"/>
+        </pattern>
+        <filter id="lineGlow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="7" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="softLineGlow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <symbol id="networkCluster" viewBox="0 0 1200 900">
+            <g fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M70 640L180 390L355 520L490 220L655 355L790 120L930 310L1110 180" opacity="0.44"/>
+                <path d="M70 640L310 780L355 520L580 700L655 355L860 610L930 310L1110 520" opacity="0.32"/>
+                <path d="M180 390L490 220L790 120L1110 180" opacity="0.2"/>
+                <path d="M310 780L580 700L860 610L1110 520" opacity="0.22"/>
+                <path d="M180 390L310 780M355 520L580 700M490 220L655 355M655 355L860 610M790 120L930 310M930 310L1110 520" opacity="0.3"/>
+                <path d="M70 640L355 520L655 355L930 310L1110 520" opacity="0.28"/>
+            </g>
+            <g fill="currentColor">
+                <circle cx="70" cy="640" r="5" opacity="0.7"/>
+                <circle cx="180" cy="390" r="4" opacity="0.62"/>
+                <circle cx="310" cy="780" r="4" opacity="0.54"/>
+                <circle cx="355" cy="520" r="5" opacity="0.72"/>
+                <circle cx="490" cy="220" r="4" opacity="0.64"/>
+                <circle cx="580" cy="700" r="4" opacity="0.58"/>
+                <circle cx="655" cy="355" r="5" opacity="0.75"/>
+                <circle cx="790" cy="120" r="4" opacity="0.6"/>
+                <circle cx="860" cy="610" r="4" opacity="0.58"/>
+                <circle cx="930" cy="310" r="5" opacity="0.7"/>
+                <circle cx="1110" cy="180" r="4" opacity="0.6"/>
+                <circle cx="1110" cy="520" r="5" opacity="0.68"/>
+            </g>
+        </symbol>
+        <symbol id="wireSphere" viewBox="0 0 900 900">
+            <g fill="none" stroke="currentColor">
+                <circle cx="450" cy="450" r="340" stroke-width="3" opacity="0.54"/>
+                <ellipse cx="450" cy="450" rx="340" ry="105" stroke-width="2" opacity="0.38"/>
+                <ellipse cx="450" cy="450" rx="340" ry="220" stroke-width="2" opacity="0.32"/>
+                <ellipse cx="450" cy="450" rx="105" ry="340" stroke-width="2" opacity="0.34"/>
+                <ellipse cx="450" cy="450" rx="220" ry="340" stroke-width="2" opacity="0.3"/>
+                <path d="M110 450H790M450 110V790" stroke-width="2" opacity="0.26"/>
+                <path d="M210 210L690 690M690 210L210 690" stroke-width="1.5" opacity="0.2"/>
+            </g>
+        </symbol>
+    </defs>
+
+    <rect width="3344" height="9410" fill="url(#background)"/>
+    <rect width="3344" height="9410" fill="url(#stars)" opacity="0.36"/>
+
+    <ellipse cx="-240" cy="1720" rx="1680" ry="2120" fill="url(#blueGlow)"/>
+    <ellipse cx="3580" cy="780" rx="1500" ry="1900" fill="url(#orangeGlow)"/>
+    <ellipse cx="80" cy="4520" rx="1500" ry="2100" fill="url(#blueGlow)" opacity="0.78"/>
+    <ellipse cx="3520" cy="3900" rx="1550" ry="2200" fill="url(#orangeGlow)" opacity="0.8"/>
+    <ellipse cx="-100" cy="7410" rx="1620" ry="2260" fill="url(#blueGlow)" opacity="0.82"/>
+    <ellipse cx="3490" cy="8070" rx="1580" ry="2250" fill="url(#orangeGlow)" opacity="0.76"/>
+
+    <path d="M-200 690C510 520 1040 910 1480 1230C1920 1550 2550 1480 3540 990L3540 2150C2790 2480 2280 2460 1690 2180C1020 1860 480 1740-200 2070Z" fill="url(#blueParticles)" opacity="0.2"/>
+    <path d="M2160 -160C2860 260 3280 820 3540 1540L3540 3100C3160 2630 2780 2250 2280 2020C2060 1910 1900 1710 1810 1460C2130 960 2300 420 2160-160Z" fill="url(#orangeParticles)" opacity="0.22"/>
+    <path d="M-200 3400C520 3060 1080 3260 1520 3740C1930 4180 2460 4300 3540 3920L3540 5230C2850 5590 2230 5450 1670 5100C1050 4710 500 4650-200 5030Z" fill="url(#blueParticles)" opacity="0.18"/>
+    <path d="M2200 3050C2840 3200 3290 3590 3540 4140L3540 6170C3090 5680 2730 5410 2250 5250C2030 5010 1990 4590 2100 4190C2200 3820 2250 3460 2200 3050Z" fill="url(#orangeParticles)" opacity="0.2"/>
+    <path d="M-200 6380C490 6060 1030 6220 1540 6700C2010 7140 2460 7250 3540 6930L3540 8340C2860 8660 2270 8510 1670 8160C1050 7790 480 7740-200 8120Z" fill="url(#blueParticles)" opacity="0.2"/>
+    <path d="M2150 6540C2820 6600 3280 7000 3540 7600L3540 9530H2130C2340 9100 2410 8660 2260 8210C2110 7770 2080 7140 2150 6540Z" fill="url(#orangeParticles)" opacity="0.2"/>
+
+    <g opacity="0.82" filter="url(#softLineGlow)">
+        <path d="M1120 1130C1480 880 1730 860 2070 1080C2410 1300 2640 1290 3020 1010" fill="none" stroke="url(#flowStroke)" stroke-width="7"/>
+        <path d="M1050 1190C1450 930 1770 920 2110 1150C2440 1370 2700 1370 3090 1080" fill="none" stroke="url(#flowStroke)" stroke-width="3" opacity="0.58"/>
+        <path d="M1000 1250C1430 1010 1780 990 2140 1220C2490 1440 2760 1440 3160 1150" fill="none" stroke="url(#flowStroke)" stroke-width="2" opacity="0.38"/>
+
+        <path d="M420 2880C850 2600 1220 2630 1600 2940C1990 3260 2340 3260 2820 2920" fill="none" stroke="url(#flowStroke)" stroke-width="6"/>
+        <path d="M350 2960C820 2670 1240 2700 1640 3020C2040 3340 2410 3340 2900 2990" fill="none" stroke="url(#flowStroke)" stroke-width="3" opacity="0.58"/>
+        <path d="M280 3040C790 2760 1260 2780 1680 3100C2110 3420 2480 3410 2980 3060" fill="none" stroke="url(#flowStroke)" stroke-width="2" opacity="0.38"/>
+
+        <path d="M830 4810C1240 4470 1640 4500 1980 4790C2330 5090 2670 5100 3140 4760" fill="none" stroke="url(#flowStroke)" stroke-width="6"/>
+        <path d="M760 4890C1210 4550 1650 4580 2020 4870C2390 5170 2740 5170 3210 4830" fill="none" stroke="url(#flowStroke)" stroke-width="3" opacity="0.58"/>
+        <path d="M700 4970C1180 4640 1670 4660 2060 4950C2450 5240 2810 5240 3290 4900" fill="none" stroke="url(#flowStroke)" stroke-width="2" opacity="0.38"/>
+
+        <path d="M220 6750C680 6420 1120 6450 1510 6760C1910 7080 2300 7060 2780 6700" fill="none" stroke="url(#flowStroke)" stroke-width="6"/>
+        <path d="M150 6830C650 6500 1140 6530 1550 6840C1970 7160 2370 7140 2860 6770" fill="none" stroke="url(#flowStroke)" stroke-width="3" opacity="0.58"/>
+        <path d="M90 6910C620 6590 1160 6610 1600 6920C2030 7230 2440 7210 2940 6840" fill="none" stroke="url(#flowStroke)" stroke-width="2" opacity="0.38"/>
+
+        <path d="M720 8580C1160 8270 1560 8280 1930 8580C2310 8890 2690 8880 3180 8540" fill="none" stroke="url(#flowStroke)" stroke-width="6"/>
+        <path d="M650 8660C1130 8350 1580 8360 1970 8660C2370 8970 2760 8960 3260 8610" fill="none" stroke="url(#flowStroke)" stroke-width="3" opacity="0.58"/>
+        <path d="M580 8740C1100 8440 1600 8440 2010 8740C2430 9040 2830 9030 3340 8680" fill="none" stroke="url(#flowStroke)" stroke-width="2" opacity="0.38"/>
+    </g>
+
+    <path d="M2550 620C2980 1140 2800 1640 2280 2050C1740 2480 1520 3040 1920 3580C2350 4160 2720 4620 2290 5200C1830 5810 1440 6240 1770 6860C2110 7500 2700 7890 2360 8500C2200 8800 2080 9080 2170 9410" fill="none" stroke="url(#verticalFlow)" stroke-width="4" opacity="0.5"/>
+    <path d="M2680 560C3090 1110 2920 1700 2380 2140C1870 2560 1680 3070 2040 3580C2460 4180 2830 4650 2400 5270C1990 5860 1580 6300 1900 6880C2250 7510 2810 7920 2500 8530C2320 8870 2230 9160 2300 9410" fill="none" stroke="url(#verticalFlow)" stroke-width="1.5" opacity="0.28"/>
+
+    <g color="#6a91c8" opacity="0.46">
+        <use href="#networkCluster" x="180" y="1280" width="1480" height="1110" transform="rotate(-8 920 1835)"/>
+        <use href="#networkCluster" x="1770" y="2080" width="1420" height="1065" transform="rotate(12 2480 2610)"/>
+        <use href="#networkCluster" x="100" y="3550" width="1500" height="1125" transform="rotate(9 850 4110)"/>
+        <use href="#networkCluster" x="1740" y="4460" width="1460" height="1095" transform="rotate(-11 2470 5005)"/>
+        <use href="#networkCluster" x="120" y="5620" width="1480" height="1110" transform="rotate(-7 860 6175)"/>
+        <use href="#networkCluster" x="1720" y="6550" width="1500" height="1125" transform="rotate(10 2470 7110)"/>
+        <use href="#networkCluster" x="80" y="7780" width="1460" height="1095" transform="rotate(8 810 8325)"/>
+        <use href="#networkCluster" x="1770" y="8420" width="1420" height="1065" transform="rotate(-9 2480 8950)"/>
+    </g>
+
+    <g opacity="0.5" fill="none">
+        <path d="M2280 380L3040 380L3220 700L3220 1450L2810 1700L2180 1470L1990 970Z" stroke="#ad673d" stroke-width="3"/>
+        <path d="M2180 1470L2490 1110L3220 1450M1990 970L2490 1110L3040 380M2490 1110V1960" stroke="#628cc4" stroke-width="2" opacity="0.64"/>
+        <path d="M1900 2480L2580 2220L3190 2600L3060 3250L2420 3470L1840 3090Z" stroke="#7b8da6" stroke-width="2" opacity="0.44"/>
+        <path d="M1840 3090L2450 2830L3190 2600M2450 2830L2420 3470M2580 2220L2450 2830" stroke="#ba6838" stroke-width="2" opacity="0.42"/>
+        <path d="M2140 5320L2940 5200L3300 5700L3050 6300L2310 6400L1930 5890Z" stroke="#a2603a" stroke-width="3" opacity="0.48"/>
+        <path d="M1930 5890L2580 5740L3300 5700M2580 5740L2310 6400M2940 5200L2580 5740" stroke="#5985bd" stroke-width="2" opacity="0.52"/>
+        <path d="M140 7160L760 6810L1380 7160L1320 7840L680 8120L100 7730Z" stroke="#527fbe" stroke-width="3" opacity="0.44"/>
+        <path d="M100 7730L710 7460L1380 7160M710 7460L680 8120M760 6810L710 7460" stroke="#a56342" stroke-width="2" opacity="0.38"/>
+    </g>
+
+    <g color="#6e94c8" filter="url(#lineGlow)">
+        <use href="#wireSphere" x="2180" y="520" width="860" height="860" opacity="0.62"/>
+        <use href="#wireSphere" x="420" y="2500" width="720" height="720" opacity="0.34"/>
+        <use href="#wireSphere" x="2220" y="4310" width="760" height="760" opacity="0.42"/>
+        <use href="#wireSphere" x="380" y="6250" width="740" height="740" opacity="0.34"/>
+        <use href="#wireSphere" x="2170" y="8150" width="780" height="780" opacity="0.4"/>
+    </g>
+
+    <g opacity="0.26">
+        <path d="M0 2120C740 1840 1340 1970 1910 2390C2460 2800 2910 2810 3344 2630V3540C2760 3700 2260 3560 1750 3220C1170 2840 600 2780 0 3120Z" fill="url(#triMesh)"/>
+        <path d="M0 5140C670 4820 1240 4920 1800 5350C2320 5750 2830 5790 3344 5510V6470C2750 6650 2200 6520 1690 6160C1110 5750 560 5720 0 6060Z" fill="url(#triMesh)"/>
+        <path d="M0 8030C720 7730 1300 7850 1860 8260C2400 8660 2860 8690 3344 8460V9350C2800 9510 2250 9380 1710 9040C1130 8680 570 8650 0 8990Z" fill="url(#triMesh)"/>
+    </g>
+
+    <g fill="#dbe9fb">
+        <circle cx="2040" cy="1180" r="5" opacity="0.7"/>
+        <circle cx="1860" cy="1520" r="3" opacity="0.6"/>
+        <circle cx="2730" cy="2050" r="4" opacity="0.54"/>
+        <circle cx="960" cy="2700" r="4" opacity="0.58"/>
+        <circle cx="1380" cy="3220" r="3" opacity="0.5"/>
+        <circle cx="2240" cy="3760" r="5" opacity="0.62"/>
+        <circle cx="1810" cy="4550" r="4" opacity="0.56"/>
+        <circle cx="2790" cy="5310" r="3" opacity="0.54"/>
+        <circle cx="720" cy="5900" r="5" opacity="0.6"/>
+        <circle cx="1320" cy="6670" r="3" opacity="0.5"/>
+        <circle cx="2400" cy="7310" r="4" opacity="0.58"/>
+        <circle cx="1020" cy="7950" r="3" opacity="0.52"/>
+        <circle cx="1890" cy="8640" r="5" opacity="0.6"/>
+        <circle cx="2840" cy="9140" r="3" opacity="0.5"/>
+    </g>
+</svg>

@@ -1,0 +1,84 @@
+<main class="profile-page">
+    <div class="profile-content">
+        <h1>MARTIN BERTHELSEN</h1>
+
+        <p class="job-title">
+            Software Developer &amp; Unity Game Developer
+        </p>
+
+        <div class="title-divider"></div>
+
+        <p class="introduction">
+            I develop functional digital solutions and<br>
+            build game experiences in Unity.
+        </p>
+
+        <div class="profile-actions">
+            <button
+                class="button button-primary"
+                type="button"
+                (click)="openProjects()"
+            >
+                <span>VIEW MY PROJECTS</span>
+
+                <span
+                    class="button-arrow"
+                    aria-hidden="true"
+                >
+                    →
+                </span>
+            </button>
+
+            <button
+                class="button button-secondary"
+                type="button"
+                aria-disabled="true"
+            >
+                <span>CONTACT ME</span>
+
+                <span
+                    class="button-arrow"
+                    aria-hidden="true"
+                >
+                    →
+                </span>
+            </button>
+        </div>
+
+        <div
+            class="technologies"
+            aria-label="Technologies"
+        >
+            @for (
+                technology of technologies;
+                track technology.name
+            ) {
+                <div class="technology">
+                    <span
+                        [class]="
+                            'technology-icon ' +
+                            technology.iconClass
+                        "
+                        aria-hidden="true"
+                    >
+                        {{ technology.icon }}
+                    </span>
+
+                    <span>
+                        {{ technology.name }}
+                    </span>
+                </div>
+            }
+        </div>
+    </div>
+
+    <button
+        class="scroll-indicator"
+        type="button"
+        aria-label="Go to projects"
+        (click)="openProjects()"
+    >
+        <span>SCROLL</span>
+        <i></i>
+    </button>
+</main>

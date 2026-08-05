@@ -1,0 +1,248 @@
+<main class="contact-page">
+    <div class="contact-layout">
+        <section
+            class="contact-introduction"
+            aria-labelledby="contact-page-title"
+        >
+            <p class="eyebrow">
+                CONTACT INFORMATION
+            </p>
+
+            <h1 id="contact-page-title">
+                Let&apos;s get in touch.
+            </h1>
+
+            <div class="title-divider"></div>
+
+            <p class="introduction-text">
+                I am a newly graduated Data Technician
+                specializing in Programming from TEC with
+                experience in software development, web
+                development, databases and Unity.
+            </p>
+
+            <p class="unity-experience">
+                I have approximately two years of Unity
+                experience working with gameplay programming,
+                UI systems, data flow, animations and game
+                systems.
+            </p>
+
+            <a
+                class="email-button"
+                [href]="'mailto:' + emailAddress"
+            >
+                <span>SEND AN EMAIL</span>
+
+                <span
+                    class="button-arrow"
+                    aria-hidden="true"
+                >
+                    →
+                </span>
+            </a>
+
+            <div class="development-focus">
+                <p>DEVELOPMENT FOCUS</p>
+
+                <div
+                    class="focus-tags"
+                    aria-label="Development focus"
+                >
+                    <span>Software Development</span>
+                    <span>Web Development</span>
+                    <span>Unity Development</span>
+                    <span>Database Management</span>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="contact-card"
+            aria-labelledby="contact-card-title"
+        >
+            <header class="contact-card-header">
+                <div
+                    class="identity-mark"
+                    aria-hidden="true"
+                >
+                    <span>M</span>
+                    <span>B</span>
+                </div>
+
+                <div class="identity">
+                    <p>CONTACT DETAILS</p>
+
+                    <h2 id="contact-card-title">
+                        Martin Almand Berthelsen
+                    </h2>
+
+                    <span>
+                        Data Technician specializing in Programming
+                    </span>
+                </div>
+            </header>
+
+            <div
+                class="contact-list"
+                aria-label="Contact details"
+            >
+                <div class="contact-entry">
+                    <span class="entry-number">
+                        01
+                    </span>
+
+                    <span class="entry-information">
+                        <span class="entry-label">
+                            EMAIL
+                        </span>
+
+                        <strong>
+                            {{ emailAddress }}
+                        </strong>
+                    </span>
+
+                    <button
+                        class="entry-action copy-action"
+                        type="button"
+                        [class.copy-success]="
+                            emailCopyState() === 'copied'
+                        "
+                        [class.copy-failed]="
+                            emailCopyState() === 'failed'
+                        "
+                        [attr.aria-label]="
+                            emailCopyState() === 'copied'
+                                ? 'Email address copied'
+                                : 'Copy email address'
+                        "
+                        (click)="copyEmail()"
+                    >
+                        <span aria-live="polite">
+                            {{ emailCopyLabel() }}
+                        </span>
+
+                        <span
+                            class="entry-action-symbol"
+                            aria-hidden="true"
+                        >
+                            {{ emailCopySymbol() }}
+                        </span>
+                    </button>
+                </div>
+
+                <div class="contact-entry">
+                    <span class="entry-number">
+                        02
+                    </span>
+
+                    <span class="entry-information">
+                        <span class="entry-label">
+                            PHONE
+                        </span>
+
+                        <strong>
+                            +45 27 14 68 70
+                        </strong>
+                    </span>
+
+                    <span
+                        class="entry-spacer"
+                        aria-hidden="true"
+                    ></span>
+                </div>
+
+                <div class="contact-entry">
+                    <span class="entry-number">
+                        03
+                    </span>
+
+                    <span class="entry-information">
+                        <span class="entry-label">
+                            LOCATION
+                        </span>
+
+                        <strong>
+                            Rødovre, Denmark
+                        </strong>
+                    </span>
+
+                    <span
+                        class="location-dot"
+                        aria-hidden="true"
+                    ></span>
+                </div>
+
+                <div class="contact-entry">
+                    <span class="entry-number">
+                        04
+                    </span>
+
+                    <span class="entry-information">
+                        <span class="entry-label">
+                            AGE
+                        </span>
+
+                        <strong>
+                            27 years old
+                        </strong>
+                    </span>
+
+                    <span
+                        class="entry-spacer"
+                        aria-hidden="true"
+                    ></span>
+                </div>
+
+                <div class="contact-entry">
+                    <span class="entry-number">
+                        05
+                    </span>
+
+                    <span class="entry-information">
+                        <span class="entry-label">
+                            GITHUB
+                        </span>
+
+                        <strong>
+                            github.com/dethenrik
+                        </strong>
+                    </span>
+
+                    <a
+                        class="entry-action github-action"
+                        href="https://github.com/dethenrik"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Open GitHub profile in a new tab"
+                    >
+                        <span>OPEN</span>
+
+                        <span
+                            class="entry-action-symbol"
+                            aria-hidden="true"
+                        >
+                            ↗
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="technology-section">
+                <p>PRIMARY TECHNOLOGIES</p>
+
+                <div
+                    class="technology-list"
+                    aria-label="Primary technologies"
+                >
+                    <span>C#</span>
+                    <span>TypeScript</span>
+                    <span>Angular</span>
+                    <span>Unity</span>
+                    <span>Firebase</span>
+                    <span>MySQL</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>

@@ -1,16 +1,26 @@
 * {
     box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Parisienne';
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    /*background-image: url('https://user-images.githubusercontent.com/98741878/270642996-6f2c1a4d-4a23-467d-9943-51fe1f366f43.jpg');*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: -290px;
-    opacity: 0;
-    transition: opacity 1.5s;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-width: 320px;
+    min-height: 100%;
+    background: #070a0f;
+}
+
+body {
+    min-width: 320px;
+    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
-  }
+    color: #f1f1f1;
+    background: #070a0f;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+app-root {
+    display: block;
+    height: 100%;
+}

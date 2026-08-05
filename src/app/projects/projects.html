@@ -1,0 +1,314 @@
+<main class="projects-page">
+    <div class="projects-content">
+        <header class="section-heading">
+            <p class="section-label">
+                SELECTED WORK
+            </p>
+
+            <h1>PROJECTS</h1>
+
+            <div class="heading-divider"></div>
+
+            <p class="section-introduction">
+                A selection of web platforms and games I have
+                developed.
+            </p>
+        </header>
+
+        <div class="project-columns">
+            @for (
+                group of projectGroups;
+                track group.id
+            ) {
+                <section
+                    [class]="
+                        'project-column ' +
+                        group.className
+                    "
+                    [attr.aria-labelledby]="
+                        'project-group-' + group.id
+                    "
+                >
+                    <header class="project-group-header">
+                        <span
+                            class="project-group-marker"
+                            aria-hidden="true"
+                        ></span>
+
+                        <h2
+                            [id]="
+                                'project-group-' + group.id
+                            "
+                        >
+                            {{ group.title }}
+                        </h2>
+                    </header>
+
+                    <div class="project-list">
+                        @for (
+                            project of group.projects;
+                            track project.id
+                        ) {
+                            <button
+                                class="project-card"
+                                type="button"
+                                [attr.aria-label]="
+                                    'Open information about ' +
+                                    project.title
+                                "
+                                (click)="openProject(project.id)"
+                            >
+                                <span class="project-number">
+                                    {{ project.number }}
+                                </span>
+
+                                <span class="project-card-content">
+                                    <span class="project-card-header">
+                                        <span class="project-category">
+                                            {{ project.category }}
+                                        </span>
+
+                                        <span
+                                            [class]="
+                                                'project-status ' +
+                                                project.statusTone
+                                            "
+                                        >
+                                            {{ project.status }}
+                                        </span>
+                                    </span>
+
+                                    <span class="project-title">
+                                        {{ project.title }}
+                                    </span>
+
+                                    <span class="project-description">
+                                        {{ project.shortDescription }}
+                                    </span>
+
+                                    <span class="project-date">
+                                        {{ project.dateLabel }}
+                                    </span>
+                                </span>
+
+                                <span
+                                    class="project-arrow"
+                                    aria-hidden="true"
+                                >
+                                    ↗
+                                </span>
+                            </button>
+                        }
+                    </div>
+                </section>
+            }
+        </div>
+    </div>
+</main>
+
+@if (selectedProject(); as project) {
+    <div
+        class="project-overlay"
+        role="presentation"
+        (click)="closeProject()"
+        (wheel)="$event.stopPropagation()"
+    >
+        <article
+            class="project-dialog"
+            role="dialog"
+            aria-modal="true"
+            [attr.aria-labelledby]="
+                'project-dialog-title-' + project.id
+            "
+            (click)="$event.stopPropagation()"
+        >
+            <header class="project-dialog-header">
+                <div>
+                    <p class="dialog-category">
+                        {{ project.category }}
+                    </p>
+
+                    <h2
+                        [id]="
+                            'project-dialog-title-' + project.id
+                        "
+                    >
+                        {{ project.title }}
+                    </h2>
+                </div>
+
+                <button
+                    class="dialog-close"
+                    type="button"
+                    aria-label="Close project information"
+                    (click)="closeProject()"
+                >
+                    <span aria-hidden="true">×</span>
+                </button>
+            </header>
+
+            <div class="project-dialog-scroll">
+                <div class="project-meta">
+                    <span
+                        [class]="
+                            'dialog-status ' +
+                            project.statusTone
+                        "
+                    >
+                        {{ project.status }}
+                    </span>
+
+                    <span class="dialog-date">
+                        {{ project.dateLabel }}
+                    </span>
+                </div>
+
+                <div
+                    class="project-dialog-content"
+                    [class.has-video]="
+                        project.videoPath !== null
+                    "
+                >
+                    <section class="project-overview">
+                        <p class="content-label">
+                            PROJECT OVERVIEW
+                        </p>
+
+                        <p>
+                            {{ project.overview }}
+                        </p>
+
+                        <div class="technology-list">
+                            @for (
+                                technology of project.technologies;
+                                track technology
+                            ) {
+                                <span>
+                                    {{ technology }}
+                                </span>
+                            }
+                        </div>
+                    </section>
+
+                    @if (
+                        project.videoPath;
+                        as videoPath
+                    ) {
+                        <figure class="project-video">
+                            <video
+                                controls
+                                playsinline
+                                preload="metadata"
+                            >
+                                <source
+                                    [src]="videoPath"
+                                    type="video/mp4"
+                                >
+
+                                Your browser does not support
+                                HTML5 video.
+                            </video>
+
+                            <figcaption>
+                                Gameplay showcase
+                            </figcaption>
+                        </figure>
+                    }
+                </div>
+
+                <div class="project-sections">
+                    <section class="project-detail-section">
+                        <h3>
+                            {{ project.primarySectionTitle }}
+                        </h3>
+
+                        <ul class="highlight-list">
+                            @for (
+                                highlight of
+                                    project.primaryHighlights;
+                                track highlight
+                            ) {
+                                <li>
+                                    <span
+                                        class="list-marker"
+                                        aria-hidden="true"
+                                    ></span>
+
+                                    <span>
+                                        {{ highlight }}
+                                    </span>
+                                </li>
+                            }
+                        </ul>
+                    </section>
+
+                    <section class="project-detail-section">
+                        <h3>
+                            {{ project.secondarySectionTitle }}
+                        </h3>
+
+                        <ul class="highlight-list">
+                            @for (
+                                highlight of
+                                    project.secondaryHighlights;
+                                track highlight
+                            ) {
+                                <li>
+                                    <span
+                                        class="list-marker"
+                                        aria-hidden="true"
+                                    ></span>
+
+                                    <span>
+                                        {{ highlight }}
+                                    </span>
+                                </li>
+                            }
+                        </ul>
+                    </section>
+                </div>
+
+                @if (project.limitations.length > 0) {
+                    <section class="limitations-section">
+                        <h3>KNOWN LIMITATIONS</h3>
+
+                        <ul class="limitations-list">
+                            @for (
+                                limitation of project.limitations;
+                                track limitation
+                            ) {
+                                <li>
+                                    <span
+                                        class="limitation-marker"
+                                        aria-hidden="true"
+                                    >
+                                        !
+                                    </span>
+
+                                    <span>
+                                        {{ limitation }}
+                                    </span>
+                                </li>
+                            }
+                        </ul>
+                    </section>
+                }
+
+                @if (project.projectNote) {
+                    <aside class="project-note">
+                        <span
+                            class="note-icon"
+                            aria-hidden="true"
+                        >
+                            i
+                        </span>
+
+                        <p>
+                            {{ project.projectNote }}
+                        </p>
+                    </aside>
+                }
+            </div>
+        </article>
+    </div>
+}

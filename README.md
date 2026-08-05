@@ -1,6 +1,59 @@
-![Hovedforløb 2 bevis_LI](https://github.com/dethenrik/dethenrik.github.io/assets/98741878/c1d0c24c-5334-42a8-9151-3eca288084f5)
-![hovedforløb 1 bevis_LI](https://github.com/dethenrik/dethenrik.github.io/assets/98741878/6a1e16d4-a95e-4007-9f8f-0060375bf62a)
-![Grundforløb bevis_LI (2)](https://github.com/dethenrik/dethenrik.github.io/assets/98741878/da99f850-6fc6-4336-8307-a0beb91a90c6)
-![Foleskolebevis_LI](https://github.com/dethenrik/dethenrik.github.io/assets/98741878/a9b31cc7-a81b-41f3-a094-e6c6cef35db0)
-![Untitled design](https://github.com/dethenrik/dethenrik.github.io/assets/98741878/c526cd12-bd86-4bf5-8b80-4bfa7a4c4b84)
-![billede_2024-05-24_125920456-removebg-preview](https://github.com/dethenrik/dethenrik.github.io/assets/98741878/33f6a9e7-e706-4f64-993c-320b8f6b9c8d)
+# Portfolio
+
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.10.
+
+## Development server
+
+To start a local development server, run:
+
+```bash
+ng serve
+```
+
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+
+## Code scaffolding
+
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+
+```bash
+ng generate component component-name
+```
+
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+
+```bash
+ng generate --help
+```
+
+## Building
+
+To build the project run:
+
+```bash
+ng build
+```
+
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
+## Running unit tests
+
+To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

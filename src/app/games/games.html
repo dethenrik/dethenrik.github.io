@@ -1,0 +1,134 @@
+<main class="games-page">
+    <div class="games-content">
+        <header class="section-heading">
+            <p class="section-label">
+                PLAYABLE BUILDS
+            </p>
+
+            <h1>GAMES</h1>
+
+            <div class="heading-divider"></div>
+
+            <p class="section-introduction">
+                Select a game to open it and play directly
+                in your browser.
+            </p>
+        </header>
+
+        <div
+            class="games-list"
+            aria-label="Playable games"
+        >
+            @for (game of games; track game.id) {
+                <button
+                    class="game-card"
+                    type="button"
+                    [attr.aria-label]="
+                        'Open and play ' + game.title
+                    "
+                    (click)="openGame(game.id)"
+                >
+                    <span class="game-number">
+                        {{ game.number }}
+                    </span>
+
+                    <span class="game-card-content">
+                        <span class="game-card-header">
+                            <span class="game-category">
+                                {{ game.category }}
+                            </span>
+
+                            <span class="game-status">
+                                {{ game.status }}
+                            </span>
+                        </span>
+
+                        <span class="game-title">
+                            {{ game.title }}
+                        </span>
+
+                        <span class="game-description">
+                            {{ game.description }}
+                        </span>
+                    </span>
+
+                    <span class="play-label">
+                        PLAY GAME
+                    </span>
+
+                    <span
+                        class="game-arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
+                </button>
+            }
+        </div>
+    </div>
+</main>
+
+@if (selectedGame(); as game) {
+    <div
+        class="game-overlay"
+        role="presentation"
+        (wheel)="$event.stopPropagation()"
+    >
+        <section
+            class="game-dialog"
+            [class.landscape-game]="
+                game.orientation === 'landscape'
+            "
+            [class.portrait-game]="
+                game.orientation === 'portrait'
+            "
+            role="dialog"
+            aria-modal="true"
+            [attr.aria-labelledby]="
+                'game-dialog-title-' + game.id
+            "
+        >
+            <header class="game-dialog-header">
+                <div class="game-dialog-title">
+                    <span class="dialog-category">
+                        {{ game.category }}
+                    </span>
+
+                    <h2
+                        [id]="
+                            'game-dialog-title-' + game.id
+                        "
+                    >
+                        {{ game.title }}
+                    </h2>
+                </div>
+
+                <button
+                    class="close-game-button"
+                    type="button"
+                    aria-label="Close game"
+                    (click)="closeGame()"
+                >
+                    <span>CLOSE</span>
+
+                    <span
+                        class="close-icon"
+                        aria-hidden="true"
+                    >
+                        ×
+                    </span>
+                </button>
+            </header>
+
+            <div class="game-frame-container">
+                <iframe
+                    class="game-frame"
+                    [src]="game.safeGameUrl"
+                    [title]="game.title"
+                    allow="autoplay; fullscreen; gamepad"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </section>
+    </div>
+}
